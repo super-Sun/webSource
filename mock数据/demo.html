@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock测试</title>
+    <script src="jquery-1.8.3.js"></script>
+    <script src="mock/mock.js"></script>
+    <script src="projectURL.js"></script>
+    <script src="projectMock.js"></script>
+</head>
+<body>
+<h1>Mock测试</h1>
+<p>格式规则地址: <a target="_blank" href="http://mockjs.com/examples.html#String">http://mockjs.com/examples.html#String</a>
+</p>
+<p>Mock.mock()用法: <a target="_blank"
+                     href="https://github.com/nuysoft/Mock/wiki/Mock.mock()">传送门1</a>&nbsp;&nbsp;&nbsp;<a
+        target="_blank" href="http://highsea90.com/t/mock/">传送门2</a></p>
+<p>模拟请求时延:Mock.setup() <a target="_blank" href="https://github.com/nuysoft/Mock/wiki/Mock.setup()">https://github.com/nuysoft/Mock/wiki/Mock.setup()</a>
+</p>
+
+<script>
+    console.log('hh:' + (Function.prototype.__proto__ === Object.__proto__.__proto__));
+    $.ajax({
+        url: _URL_PJ_COMMON.LLQK_URL1,
+        dataType: 'json',
+        success: function (result) {
+            console.log(result,result);
+        }
+    })
+    $.ajax({
+        url: _URL_PJ_COMMON.LLQK_URL2,
+        // dataType: 'json',
+        success: function (result) {
+            // console.log(typeof result);
+        }
+    })
+    $.ajax({
+        url: _URL_PJ_COMMON.LLQK_URL2,
+        // dataType: 'json',
+        success: function (result) {
+            // console.log(typeof result);
+        }
+    })
+    /*
+    $.ajax({
+        url: 'hello.json',
+        dataType: 'json'
+    }).done(function(data, status, jqXHR) {
+        $('<pre>').text(JSON.stringify(data, null, 4))
+            .appendTo('body')
+    })
+    $.ajax({
+        url: 'hello.json',
+        type: 'post',
+        dataType: 'json',
+        data: {
+            foo: 1,
+            bar: 2,
+            faz: 3
+        }
+    }).done(function(data, status, jqXHR) {
+        $('<pre>').text(JSON.stringify(data, null, 4))
+            .appendTo('body')
+    })
+    $.ajax({
+        url: 'hello.json',
+        type: 'post',
+        dataType: 'json',
+        data: {
+            foo: 1,
+            bar: 2,
+            faz: 3
+        }
+    }).done(function(data, status, jqXHR) {
+        $('<pre>').text(JSON.stringify(data, null, 4))
+            .appendTo('body')
+    })
+    */
+</script>
+</body>
+</html>

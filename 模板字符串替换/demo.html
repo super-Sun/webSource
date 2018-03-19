@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串替换</title>
+</head>
+<body>
+<div id="text"></div>
+<script>
+    var htmlTemp = ['<div class="alert-box">',
+        '        <div class="alert-header">',
+        '            <span class="title-icon">浙A88888</span>',
+        '            <span class="close-icon" onclick=\'popupmanage.closePopup();\'>X</span>',
+        '        </div>',
+        '        <div class="alert-content">',
+        '            <ul class="msg-info1">',
+        '                <li><span class="param-name">车辆类型：</span><span class="param-value">{{car}}</span></li>',
+        '                <li><span class="param-name">驾驶人：</span><span class="param-value">{{driver}}</span></li>',
+        '                <li><span class="param-name">联系电话：</span><span class="param-value">{{tel}}</span></li>',
+        '                <li><span class="param-name">领证时间：</span><span class="param-value">{{time}}</span></li>',
+        '            </ul>',
+        '        </div>',
+        '        <div class="alert-footer"></div>',
+        '    </div>'].join("");
+
+    function data2html(template, data) {
+        return template.replace(/{{(.*?)}}/g, function (match, key) {
+            return data[key] || ''
+        })
+    }
+    var data = {
+        "car": 'F1',
+        "driver": 'F2',
+        "tel": null,
+       "time": 'F4',
+    }
+    console.log(data2html(htmlTemp, data));
+    document.write(data2html(htmlTemp, data))
+
+</script>
+</body>
+</html>

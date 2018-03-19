@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <script src="jquery-1.8.3.js"></script>
+    <script src="./jquery.doClick.js"></script>
+    <style>
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 20px solid #333;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+        }
+    </style>
+</head>
+<body>
+<div class="okok" style="width: 100px;;height: 100px;background: rebeccapurple;"></div>
+<div class="nono" style="width: 100px;;height: 100px;background: red;"></div>
+<input type="button" value="a" />
+<input type="button" value="b" />
+<input type="button" value="c" />
+<div class="triangle"></div>
+<script>
+    var arr=document.getElementsByTagName("input"), i=0, len=arr.length;
+    var array1 = Array.from(arr)
+    array1.forEach(function (value, index) {
+        value.onclick = function(){
+            alert(index);
+        }
+    })
+    // for( ; i<len; i++ ){
+    //     arr[i].onclick = function(){
+    //         alert( i );
+    //     }
+    // }
+</script>
+
+<script>
+    /*
+     *  使用方法:
+     *      $(dom).doClick({
+     *          // 单击事件回调
+     *          onClick: function () {}
+     *          // 双击事件回调
+     *          dbClick: function () {}
+     *      })
+     */
+    $('.okok').doClick({
+        onClick: function (self) {
+            // 单击事件回调
+            console.log('okok单击');
+        },
+        dbClick: function (self) {
+            // 双击事件回调
+            console.log('okok双击');
+        }
+    });
+
+    $('.nono').doClick({
+        onClick: function (self) {
+            // 单击事件回调
+            console.log('nono单击');
+        },
+        dbClick: function (self) {
+            // 双击事件回调
+            console.log('nono双击');
+        }
+    });
+
+    var time = '2014-07-10 10:21:12';
+
+    var timestamp2 = Date.parse(new Date(time));
+    console.log(timestamp2);
+    var array1 = [1, 4, 9, 16];
+
+    // pass a function to map
+    var map1 = array1.map(function (value, index) {
+        console.log(index);
+        return value * 2;
+    });
+
+    console.log(map1);
+</script>
+</body>
+</html>

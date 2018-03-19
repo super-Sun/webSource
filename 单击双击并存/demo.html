@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>xxxx</title>
+    <script src="jquery-1.8.3.js"></script>
+    <script>
+        // var item = '';
+        //
+        // function doClick(n) {
+        //     item = n;
+        //     var timer = setTimeout("callBack()", 300)
+        //     ;
+        //     if (item == 2) {
+        //         clearTimeout(timer);
+        //     }
+        // }
+        //
+        // function callBack() {
+        //     if (item == 1) {
+        //         //单击事件
+        //         console.log('单击事件');
+        //     } else if (item == 2) {
+        //         //双击事件
+        //         console.log('双击事件');
+        //     }
+        // }
+
+        // var timer = null;
+        // function doClick(dom) {
+        //     var time = $(dom).attr("data-sum");
+        //     time = 1 * time + 1;
+        //     $(dom).attr("data-sum", time);
+        //     if (timer == null) {
+        //         timer = setTimeout(function () {
+        //             var time = $(dom).attr("data-sum")
+        //             if (time > 1) {
+        //                 // 双击
+        //                 console.log('双击');
+        //                 timer = null;
+        //             } else {
+        //                 // 单击
+        //                 console.log('单击');
+        //                 timer = null;
+        //             }
+        //             $(dom).attr("data-sum", 0);
+        //         },300)
+        //     }
+        // }
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div class="okok" data-sum="0" style="width: 100px;;height: 100px;background: rebeccapurple;"></div>
+<script>
+    $('.okok').doClick();
+</script>
+</body>
+</html>

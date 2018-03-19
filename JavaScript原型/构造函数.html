@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+    <script src="jquery-1.8.3.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Notice: in ES6 the concept of a “class” is standardized, and is implemented as exactly a syntactic sugar on top of
+        the constructor functions as described above. From this viewpoint prototype chains become as an implementation detail of the class-based inheritance:</h1>
+    <h1>在ES6中，“类”的概念是标准化的，并且如上所述在构造函数之上完全实现为语法糖。
+        从这个角度来看，原型链变成了基于类的继承的实现细节</h1>
+</div>
+<script>
+    // 构造方法函数
+    function Foo(y) {
+        // 它可以通过指定的模式创建对象：它们在创建后拥有“y”属性
+        // 创建对象私有属性：y
+        this.y = y;
+    }
+
+    // “Foo.prototype”也存储对新创建对象原型的引用，
+    // 因此我们可以使用它来定义共享/继承属性或方法，
+    // 与前面的示例中一样，我们有：
+
+    // 通过FUNC.prototype, 创建公共属性/方法
+    Foo.prototype.x = 10;
+    Foo.prototype.calculate = function (z) {
+        return this.x + this.y + z;
+    };
+
+    /**********************************分隔线*************************************/
+    var b = new Foo(20);
+    var c = new Foo(30);
+
+    // 调用继承的方法
+    b.calculate(30); // 60
+    c.calculate(40); // 80
+
+    // let's show that we reference
+    // properties we expect
+
+    console.log(
+        b.prototype, // undefined；因此: 对象没有prototype属性
+        b.__proto__ === Foo.prototype, // true
+        c.__proto__ === Foo.prototype, // true
+
+        b.constructor === Foo, // true
+        c.constructor === Foo, // true
+        Foo.prototype.constructor === Foo, // true
+
+        b.calculate === b.__proto__.calculate, // true
+        b.__proto__.calculate === Foo.prototype.calculate // true
+    );
+</script>
+</body>
+</html>

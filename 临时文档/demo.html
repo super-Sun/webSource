@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin:  0;
+        font-family: '微软雅黑';
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    ul>li {
+        list-style-type: none;
+    }
+    .container {
+        padding: 100px;
+    }
+    .alert-box {
+        border: 1px solid #b9c8c3;
+        background-color: #fff;
+        font-size: 12px;
+        width: 312px;
+    }
+    .alert-box .alert-header {
+        border-bottom: 1px solid #b9c8c3;
+        height: 31px;
+    }
+    .alert-box .alert-header .title-icon {
+        display: block;
+        line-height: 31px;
+        padding-left: 26px;
+        float: left;
+        background: url('icon_car.png') no-repeat 2px center;
+    }
+    .alert-box .alert-header .close-icon {
+        display: block;
+        float: right;
+        line-height: 31px;
+        margin-right: 6px;
+        height: 31px;
+        width: 8px;
+        cursor: pointer;
+        background: url('icon_close.png') no-repeat center;
+    }
+    .alert-box .alert-content {
+
+    }
+    .alert-box .alert-content .msg-info1 {
+        padding: 10px;
+    }
+    .alert-box .alert-content .msg-info1 li + li{
+        padding-top: 10px;
+    }
+    .alert-box .alert-content ul>li span {
+    }
+    .alert-box .alert-content .param-name {
+        color: #a2a2a2;
+    }
+    .alert-box .alert-content .param-value {
+        color: #313131;
+    }
+    .hide {
+        display: none;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="alert-box">
+        <div class="alert-header">
+            <span class="title-icon">浙A88888</span>
+            <span class="close-icon" onclick='popupmanage.closePopup();'></span>
+        </div>
+        <div class="alert-content">
+            <ul class="msg-info1">
+                <li><span class="param-name">车辆类型：</span><span class="param-value">{{car}}</span></li>
+                <li><span class="param-name">驾驶人：</span><span class="param-value">{{driver}}</span></li>
+                <li><span class="param-name">联系电话：</span><span class="param-value">{{tel}}</span></li>
+                <li><span class="param-name">领证时间：</span><span class="param-value">{{time}}</span></li>
+            </ul>
+        </div>
+        <div class="alert-footer hide"></div>
+    </div>
+</div>
+</body>
+</html>

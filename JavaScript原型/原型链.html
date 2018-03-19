@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+    <script src="jquery-1.8.3.js"></script>
+</head>
+<body>
+<h1>在ES6中，“类”的概念是标准化的，并且如上所述在构造函数之上完全实现为语法糖。
+    从这个角度来看，原型链变成了基于类的继承的实现细节</h1>
+<script>
+    $(function () {
+        var a = {
+            x: 10,
+            calculate: function (z) {
+                console.log(this.x);
+                return this.x + this.y + z;
+            }
+        };
+
+        var b = {
+            y: 20,
+            __proto__: a
+        };
+
+        var c = {
+            y: 30,
+            __proto__: a
+        };
+
+        // call the inherited method
+        var showb = b.calculate(30); // 60
+        console.log(showb);
+        var showc = c.calculate(40); // 80
+        console.log(showc);
+    })
+
+</script>
+</body>
+</html>
