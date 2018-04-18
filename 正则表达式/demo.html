@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<script>
+    /**
+     * 正则表达式格式
+     * var expression = / pattern / flags
+     * pattern: 模式，可以是任何简单或复杂的正则表达式，包含字符类、限定符、分组、向前查找以及反向引用
+     * flags: 用来表明正则表达式的行为，
+     *   g: 表示全局模式，模式 将被应用所有字符串，而非在发现的第一个匹配项时立即停止
+     *   i: 表示不区分大小写模式，即在确定匹配项时忽略模式的字符串的大小写
+     *   m: 表示多行模式，即在到达一行文本末尾时还会继续查找下一个行中是否存在与模式项匹配的的项
+     * 总结: 一个正则表达式，就是一个模式与上述3个标志的组合体
+     */
+
+    /**
+     * 匹配字符串中所有的'at'实例
+     */
+    var pattern1 = /at/g;
+    /**
+     * 匹配到的第一个 bat 或者 cat, 且不区分大小写
+     */
+    var pattern2 = /[bc]at/i
+    /**
+     * 匹配所有以'at'结果的三个字符组合，不区分大小写
+     */
+    var pattern3 = /.at/gi
+
+    /**
+     * ES3中正则表达式字面量始终会共享一个RegExp，而构造函数中每次都会创建新的RegExp
+     * 从而，reg1中，第一次为true，第一次结束后，第二期调用的是从索引为3的字符开始，会检索到末尾。所以再下一次调用test时，又从头开始了
+     * ES5以后，IE9+，做出了修改，即 每次都创建RegExp page105
+     */
+    var reg1, reg2 = null;
+    for (var i = 0, len = 10; i < len; i++) {
+        reg1 = /cat/g
+        console.log(1, reg1.test('catsssss'));;
+    }
+    for (var i = 0, len = 10; i < len; i++) {
+        reg2 = /cat/g
+        console.log(2, reg2.test('catsssss'));;
+    }
+
+
+</script>
+</body>
+</html>

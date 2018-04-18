@@ -18,18 +18,18 @@
 <body>
 <div class="okok" style="width: 100px;;height: 100px;background: rebeccapurple;"></div>
 <div class="nono" style="width: 100px;;height: 100px;background: red;"></div>
-<input type="button" value="a" />
-<input type="button" value="b" />
-<input type="button" value="c" />
-<div class="triangle"></div>
+<!--<input type="button" value="a" />-->
+<!--<input type="button" value="b" />-->
+<!--<input type="button" value="c" />-->
+<!--<div class="triangle"></div>-->
 <script>
-    var arr=document.getElementsByTagName("input"), i=0, len=arr.length;
-    var array1 = Array.from(arr)
-    array1.forEach(function (value, index) {
-        value.onclick = function(){
-            alert(index);
-        }
-    })
+    // var arr=document.getElementsByTagName("input"), i=0, len=arr.length;
+    // var array1 = Array.from(arr)
+    // array1.forEach(function (value, index) {
+    //     value.onclick = function(){
+    //         alert(index);
+    //     }
+    // })
     // for( ; i<len; i++ ){
     //     arr[i].onclick = function(){
     //         alert( i );
@@ -69,19 +69,19 @@
         }
     });
 
-    var time = '2014-07-10 10:21:12';
-
-    var timestamp2 = Date.parse(new Date(time));
-    console.log(timestamp2);
-    var array1 = [1, 4, 9, 16];
-
-    // pass a function to map
-    var map1 = array1.map(function (value, index) {
-        console.log(index);
-        return value * 2;
-    });
-
-    console.log(map1);
+    // var time = '2014-07-10 10:21:12';
+    //
+    // var timestamp2 = Date.parse(new Date(time));
+    // console.log(timestamp2);
+    // var array1 = [1, 4, 9, 16];
+    //
+    // // pass a function to map
+    // var map1 = array1.map(function (value, index) {
+    //     console.log(index);
+    //     return value * 2;
+    // });
+    //
+    // console.log(map1);
 </script>
 </body>
 </html>

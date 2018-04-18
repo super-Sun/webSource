@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="jquery-1.8.3.js"></script>
+    <style>
+        .box {
+            width: 250px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(document).on('click', function (event) {
+                var eventT = event.target;
+                var $box = $('.box')
+                var box1 = $box[0];
+                var box2 = $box[1];
+                console.log(typeof eventT);
+                console.log(eventT);
+                console.log($box);
+                console.log( box1);
+                console.log( box1 === eventT);
+                console.log( box2 === eventT);
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>描述</h1>
+    <p>鼠标点击除了红色区域可做到影藏红色区域</p>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

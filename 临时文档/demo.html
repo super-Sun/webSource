@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>demo</title>
+    <script src="jquery-1.8.3.js"></script>
 </head>
 <style>
     * {
@@ -24,6 +25,7 @@
         background-color: #fff;
         font-size: 12px;
         width: 312px;
+        margin-top: 100px;
     }
     .alert-box .alert-header {
         border-bottom: 1px solid #b9c8c3;
@@ -35,6 +37,12 @@
         padding-left: 26px;
         float: left;
         background: url('icon_car.png') no-repeat 2px center;
+    }
+    .alert-box .alert-header .title-text {
+        display: block;
+        line-height: 31px;
+        padding-left: 10px;
+        float: left;
     }
     .alert-box .alert-header .close-icon {
         display: block;
@@ -63,6 +71,19 @@
     .alert-box .alert-content .param-value {
         color: #313131;
     }
+    .alert-box .alert-footer {
+        background-color: #f5f5f5;
+        padding: 3px 8px;
+    }
+    .alert-box .alert-footer span {
+        float: right;
+        display: block;
+        padding: 2px 4px;
+        background-color: #3385ff;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 4px;
+    }
     .hide {
         display: none;
     }
@@ -82,8 +103,36 @@
                 <li><span class="param-name">领证时间：</span><span class="param-value">{{time}}</span></li>
             </ul>
         </div>
+        <div class="alert-footer">
+            搜索范围:
+            <select>
+            {{each list}}
+                <option value="{{$value}}">{{$value}}km</option>
+            {{/each}}
+            </select>
+            <span>派警</span>
+            <span>一键搜索轨迹</span>
+            <span >周边资源</span>
+        </div>
+    </div>
+    <div class="alert-box">
+        <div class="alert-header">
+            <span class="title-text">桩米信息</span>
+            <span class="close-icon" onclick='popupmanage.closePopup();'></span>
+        </div>
+        <div class="alert-content">
+            <ul class="msg-info1">
+                <li><span class="param-name">桩米号：</span><span class="param-value">{{car}}</span></li>
+                <li><span class="param-name">所属道路：</span><span class="param-value">{{driver}}</span></li>
+                <li><span class="param-name">位置信息(经度)：</span><span class="param-value">{{tel}}</span></li>
+                <li><span class="param-name">位置信息(纬度)：</span><span class="param-value">{{time}}</span></li>
+            </ul>
+        </div>
         <div class="alert-footer hide"></div>
     </div>
 </div>
+<script>
+    console.log($("select").val());
+</script>
 </body>
 </html>

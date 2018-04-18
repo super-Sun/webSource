@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event</title>
+    <script src="../lib/jquery-1.8.3.js"></script>
+</head>
+<body>
+<h1>Dom事件级别</h1>
+<p>Dom0: 如onclick = function(){}，特点: 直接通过"="赋值的方式，导致后一次赋值操作，覆盖前一次赋值操作</p>
+<p>Dom1: 无</p>
+<p>Dom2: 如el.addEventListener('click', function(){})，特点: 多次绑定，多次触发</p>
+<p>Dom3: 在Dom2上扩充了鼠标、键盘的点击事件，keyup...等事件，特点: 同Dom</p>
+<h1>Event对象常见应用</h1>
+<p>event.preventDefault: 阻止浏览器默认事件</p>
+<p>event.stopPropagation: 阻止冒泡</p>
+<p>event.stopImmediatePropagation: 为同一个元素，同时绑定多个事件的时候，在其中一个事件中执行该方法，将不会执行后续方法</p>
+<p>event.target: 事件触发的根对象</p>
+<p>event.currentTarget: 事件触发的绑定对象</p>
+<div class="container">
+    演示:
+    <ul id="ul">
+        <li class="row1"><span>1111</span></li>
+        <li class="row2"><span>2222</span></li>
+        <li class="row3">3333</li>
+        <li class="row4">4444</li>
+        <li class="row5">5555</li>
+        <li class="row6">6666</li>
+    </ul>
+</div>
+<h1>Event自定义事件</h1>
+<p>new Event('eventName'): 注册自定义事件，无参数携带</p>
+<p>new CustomEvent('eventName', {detail: {name: 'name'}}): 注册自定义事件，携带参数，但是必须包裹在detail内</p>
+<p>el.addEventListener('eventName', function (event) {var data = event.detail;}): 为元素绑定自定义事件</p>
+<p>el.dispatchEvent(event): 触发自定义事件</p>
+
+    <script>
+        /*
+        event.stopPropagation()
+        event.stopImmediatePropagation()
+        event.currentTarget
+        event.target
+        */
+        var ul = document.getElementById("ul");
+
+        // ul.onclick  = function (event) {
+        //     console.log(event.target.nodeName); // UL
+        //     console.log(event.currentTarget.nodeName); // LI
+        //     console.log(this === event.currentTarget); // true
+        // }
+        $('ul').on('click', 'li', function (event) {
+            console.log(event.target.nodeName.toLowerCase()); // UL
+            console.log(event.currentTarget.nodeName.toLowerCase()); // LI
+            console.log(this === event.currentTarget); // true
+        });
+        var name = 1122
+        var cEvent = new CustomEvent('aa', {detail: {name:name}});
+        var eve = new Event('bb');
+        /*
+        ul.addEventListener('bb', function (event) {
+            console.log('bb');
+        });
+        ul.dispatchEvent(eve);
+        */
+        name = 22111
+        ul.addEventListener('aa', function (event) {
+            console.log('aa');
+            var data = event.detail;
+            console.log(data); // {name: 1122}
+        });
+        name = 2211
+        ul.dispatchEvent(cEvent);
+
+
+        console.log(window.document.elements);
+
+    </script>
+</body>
+</html>

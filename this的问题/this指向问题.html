@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this指向问题</title>
+</head>
+<body>
+<p>this指向问题</p>
+<script>
+    /**
+     * 隐式绑定
+     * 一般来说，谁调用了方法，该方法的this就指向谁
+     * 如果存在多次调用，对象属性引用链只有上一层或者说最后一层在调用位置中起作用
+     */
+    function ysbd () {
+        // 输出函数
+        function func1() {
+            console.log(this.a);
+        }
+        var a = 3;
+        var obj = {
+            a:2,
+            func1: func1
+        }
+        obj.func1(); // 输出2,因为是obj调用的foo，所以foo的this指向了obj，而obj.a = 2
+
+        var obj2 = {
+            a: 3,
+            obj: obj
+        }
+        obj2.obj.func1(); // 输出2,因为多次调用，对象属性引用链只有上一层或者说最后一层在调用位置中起作用
+    }
+    ysbd();
+    /**
+     * 隐式丢失
+     * 介绍: 一个最常见的this绑定问题就是被隐式绑定的函数会丢失绑定对象，
+     * 也就是说他回应用默认绑定，从而把this绑定到全局对象或者undefined上，取决于是否是严格模式。
+     *
+     */
+    function ysds() {
+        function foo() {
+            console.log( this.a )
+        }
+
+        var obj1 = {
+            a: 2,
+            foo: foo
+        }
+
+        var bar = obj1.foo; // 函数别名！
+
+        // window.a = "oops, global"; // a是全局对象的属性
+
+        bar(); // "oops, global"
+    }
+    ysds()
+
+</script>
+</body>
+</html>
