@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    .container {
+        padding: 100px;
+    }
+    .input-box {
+        width: 130px;
+        height: 35px;
+        cursor: text;
+        border: 1px solid red;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .input-box li input {
+        border: none;
+        outline-style: none;
+        width: 5px;
+    }
+</style>
+<body>
+<div class="container">
+    <button id="click">click</button>
+    <div id="input-box" class="input-box">
+        <div class="ul-box">
+            <ul id="ul">
+                <li>
+                    <input id="input-text" type="text" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('input-box').addEventListener('click', function (ev) {
+        console.log(11111);
+        console.log('target ==> ',ev.target);
+        console.log('currentTarget ==>', ev.currentTarget);
+        document.getElementById('input-text').focus();
+        console.log(11111);
+    }, true);
+    document.getElementById('input-box').addEventListener('click', function (ev) {
+        console.log(22222);
+        console.log('target ==> ',ev.target);
+        console.log('currentTarget ==>', ev.currentTarget);
+        document.getElementById('input-text').focus();
+        console.log(22222);
+    }, false);
+    document.getElementById('click').addEventListener('click', function (ev) {
+        if (document.getElementById('input-text').value != '') {
+            var newItem=document.createElement("LI")
+            var textnode=document.createTextNode(document.getElementById('input-text').value)
+            newItem.appendChild(textnode)
+            var ul = document.getElementById('ul')
+            ul.insertBefore(newItem, ul.childNodes[0]);
+        }
+    });
+
+
+    document.getElementById('ul').addEventListener('click', function (event) {
+        var target = event.target;
+        if (target.tagName == 'LI') {
+            var pNode = target.parentNode;
+            if (document.getElementById('ul') === pNode) {
+                alert(this === pNode)
+            }
+        }
+    });
+
+    var txtInput =document.getElementById("input-text");
+    function getAbsPoint(e)// 获取绝对坐标
+    {
+        var x = e.offsetLeft;
+        var y = e.offsetTop;
+        while(e = e.offsetParent)
+        {
+            x += e.offsetLeft;
+            y += e.offsetTop;
+        }
+        return {"x": x, "y": y};
+    }
+    console.log(getAbsPoint(txtInput))
+</script>
+</body>
+</html>
