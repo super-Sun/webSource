@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>总结：typeof和Object.prototype.toString.call组合判断</h1>
+    <p>1.判断一个对象的类型先通过typeof判断。这里可以区分所有非引用类型(除了null)的变量['number', 'boolean', 'string', 'undefined']和function类型: ['function']; 在《Javascript高级程序设计》中指出基础数据类型有五种：Undefined Null Boolean Number String</p>
+    <p>2.typeof NaN === 'number' // true</p>
+    <p>3.typeof无法区分引用类型{}和[]，同时通过typeof判断null的结果为'object'</p>
+    <p>4.typeof null === 'object' // true</p>
+    <p>5.通过Object.prototype.toString.call(obj)，区分[] ==> '[object Array]'、{} ==> '[object Object]'</p>
+    <p>6.补充：Function有自己的toString方法，即Function.protoType.toString !== Object.prototype.toString，Function.protoType.toString是将构造函数转化成字符串</p>
+    <script>
+        function getTypeName (p) {
+            var type = typeof p;
+            if (type == 'object') {
+                // if (p == null) {
+                //     return null;
+                // }
+                return Object.prototype.toString.call(p);
+                // return p.toString()
+            } else if (type === 'number') {
+                type = isNaN(p) ? 'NaN' : 'number';
+            }
+            return type;
+        }
+        console.log(getTypeName([])); //
+        console.log(getTypeName({})); //
+        console.log(getTypeName(null)); //
+        console.log(getTypeName(getTypeName)); //
+        console.log(getTypeName(11)); //
+        console.log(getTypeName('ss')); //
+        console.log(getTypeName(false)); //
+        console.log(getTypeName(NaN)); //
+        console.log(getTypeName()); //
+    </script>
+</body>
+</html>
