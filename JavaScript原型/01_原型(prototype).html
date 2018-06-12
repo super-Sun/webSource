@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型</title>
+</head>
+<body>
+<h1>原型--Prototype</h1>
+<script>
+    /**
+     * 1.函数的prototype属性
+     *   1)每一个函数都有一个prototype属性，它默认指向一个Object（即：原型对象）
+     *   2)每一个原型对象中有一个属性contructor，它指向函数对象
+     * 2.给原型对象增加的属性
+     *   1)函数所有的实例对象自动拥有原型中的方法（即：原型对象中的属性都是给实例用的）
+     *   2)原型对象中默认有两个属性constructor和__proto__
+     *   3)constructor: 指向函数本身
+     *   4)__proto__: 指向Function.prototype
+     */
+    function Fun() {
+
+    }
+    console.log(Fun === Fun.prototype.constructor); // true
+    console.log(Fun.__proto__ === Function.prototype) // true
+
+</script>
+</body>
+</html>

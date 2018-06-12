@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+<body>
+<h1>原型链</h1>
+<img src="proto_chain.png" alt="">
+<div>
+    <h2>总结：</h2>
+    <p>1.Function是顶层的构造器，Object和其他构造函数，包括Function自身，都是通过Function构造出来的，也即是说，都是Function的实例。因此，这些对象的__proto__属性都是指想Function.prototype</p>
+    <p>2.Object是顶层的对象，所有的原型对象都是通过Object构造出来的，即: 都是Object的实例。具体是组成为：空的Object(含__proto__) + constructor属性(指向"目标构造函数")(Object.prototype除外)</p>
+    <p>3.只有原型对象有constructor属性</p>
+    <p>4.任何对象都具有__proto__属性，其中Object.prototype.__proto__ === null</p>
+    <p>5.构造函数和实例的关系 var fn = new Fun()</p>
+    <p>6.构造函数和原型对象的关系 构造函数.prototype ==> 原型对象； 原型对象.constructor ==> 构造函数</p>
+    <p>7.只有构造函数有prototype属性，原因: 构造函数都是被Function创建的，对于Function来说改构造方法是它的实例，prototype属性为Function的构造方法内属性，因此被赋值到创建的实例上，但是当这个实例被当做构造方法来使用时，prototype属性并不在构造方法内，而是直接挂载在构造方法上，就是类属性。</p>
+    <p>8.任何对象都可以调用Object.prototype上的属性和方法</p>
+    <p>9.任何通过函数创建的对象都可以调用Function.prototype上的属性和方法</p>
+    <p>10.任何通过Function函数创建的对象都可以调用Function.prototype上的属性和方法</p>
+    <p>10.不是Function函数创建的对象都不能调用Function.prototype上的属性和方法</p>
+</div>
+<script>
+    /**
+     * 1.原型链：
+     *   1)访问一个属性时，先访问自身的属性，找到返回，如果自身没有，
+     *   再沿着__proto__这条链向上查找，找到返回，如果找到最后为null，
+     *   则返回undefined
+     *   2)__proto__：别名 隐式原型链
+     * 2.原型链的本质
+     *   1)原型链从本质上讲，说的是隐式原型链，即由__proto__组成的原型链，与prototype无关
+     */
+    function Fun() {
+        this.name = ''
+    }
+    var aa = {name: '11'}
+    for (var key in aa) {
+        var value = aa[key];
+        console.log('value',value);
+    }
+
+    console.log(Fun.prototype) // {constructor: Fun(){}, __proto__: Object}
+    console.log(Fun.prototype === new Fun().__proto__); // true
+    console.log(Fun.prototype.__proto__ === Object.prototype); // true
+</script>
+</body>
+</html>
