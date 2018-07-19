@@ -47,8 +47,27 @@
         </div>
     </div>
 </div>
-
+<div id="xxss" style="background: red;height: 200px;width: 300px;">
+    <div id="ddd" style="background: yellow;height: 100px;width: 150px;"></div>
+</div>
 <script>
+    var msg = 'msg';
+    var handle = {
+        msg: 'sss',
+        showMsg: function () {
+            console.log(this.msg);
+        }
+    }
+    // document.getElementById('xxss').onclick = function () {
+    //     handle.showMsg()
+    // }
+    document.getElementById('xxss').addEventListener('click', function (ev) {
+        console.log('xxss');
+
+    });
+    document.getElementById('ddd').addEventListener('click', function (ev) {
+       // console.log('ddd');
+    });
     document.getElementById('input-box').addEventListener('click', function (ev) {
         console.log(11111);
         console.log('target ==> ',ev.target);

@@ -9,11 +9,41 @@
     // !可以判断哪些
     var ifelse = null;
     // Handle $(""), $(null), $(undefined), $(false)
-    var isBool = !ifelse
+    var isBool = !ifelse;
+
     // || 的作用
-
     // && 的作用
-
+    /**
+     *	几乎所有语言中 || 和 && 都遵循“短路”原理，
+     *	如&&中第一个表达式为假就不会去处理第二个表达式，而||正好相反。
+     *	js也遵循上述原则。
+     *	当||时，找到为true的分项就停止处理，并返回该分项的值，否则执行完，并返回最后分项的值。
+     *	当&&时，找到为false的分项就停止处理，并返回该分项的值。
+     **/
+    /**
+     * 逻辑运算符运算运算规则
+     * 转换规则:
+         对象为true
+         非零数字为true
+         非空字符串为true
+         其他为false
+     */
+    var string = 'string';
+    var number = 0;
+    var bool = true;
+    var func;
+    console.log(number || func); // string
+    console.log(number && string); // 0
+    console.log(bool || number); // true
+    console.log(bool && number); // 0
+    console.log(func && number); // 0
+    /**
+     * 总结：
+     * && 和 || 都遵循短路原则
+     * && false就停止，并且返回false项的执行结果
+     * || true就停止，并且返回true项的执行结果
+     * fn && fn.call()
+     */
 
 </script>
 </body>

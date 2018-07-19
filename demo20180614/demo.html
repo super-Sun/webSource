@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.8.3.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .box {
+            position: relative;
+            background-color: #b9c8c3;
+            height: 30px;
+            border-bottom: 1px solid #3385ff;
+        }
+        .items {
+            position: absolute;
+            bottom: -1px;
+            margin-left: 10px;
+            overflow: hidden;
+        }
+        .item {
+            float: left;
+            height: 25px;
+            width: 60px;
+            background: #fff;
+            border: 1px solid #a2a2a2;
+            border-bottom-color: #3385ff;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .item + .item {
+            margin-left: -1px;
+        }
+        .item.selected {
+            position: relative;
+            border-color: #3385ff;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="items">
+                <div class="item selected"></div>
+                <div class="item "></div>
+                <div class="item "></div>
+                <div class="item "></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".items .item").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        })
+    </script>
+</body>
+</html>

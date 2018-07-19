@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deno</title>
+    <link rel="stylesheet" href="jquery.pageAnimate/css/animations.css">
+    <script src="jquery-1.8.3.js"></script>
+    <script src="jquery.pageAnimate/js/jquery.min.js"></script>
+    <script src="jquery.pageAnimate/js/modernizr.custom.js"></script>
+    <script src="jquery.pageAnimate/js/animate.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body, .pt-perspective {
+        height: 100%;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .pt-perspective {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-perspective: 1200px;
+        -moz-perspective: 1200px;
+        perspective: 1200px;
+    }
+
+    .pt-page {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .pt-triggers {
+        position: absolute;
+        z-index: 10000;
+    }
+
+    .pt-page-current,
+    .no-js .pt-page {
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .pt-page-ontop {
+        z-index: 999;
+    }
+
+    .screen-list-view {
+        position: fixed;
+        display: none;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 1000;
+    }
+
+    .container {
+        width: 1140px;
+        height: 800px;
+        background-color: transparent;
+        margin: 0 auto;
+    }
+
+    .container .dpxx-list {
+        overflow: hidden;
+        padding-top: 120px;
+    }
+
+    .container .dpxx-list .dpxx-single {
+        position: relative;
+        width: 50%;
+        padding-right: 35px;
+        float: left;
+        padding-bottom: 40px;
+    }
+
+    .container .dpxx-list .dpxx-single .mb-img-box {
+        height: 270px;
+        width: 480px;
+    }
+
+    .container .dpxx-list .dpxx-single .tool-bar {
+        width: 480px;
+    }
+
+    .container .dpxx-list .dpxx-single .tool-bar .btn-delete {
+        float: right;
+        background: url(<%=contextPath%>/bigscreen/images/btn_blue03.png);
+        height: 36px;
+        line-height: 36px;
+        width: 75px;
+        border: none;
+        margin: 3px 0;
+        cursor: pointer;
+    }
+
+    .btn-go-throght {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: url('<%=contextPath%>/bigscreen/images/product/qiehuan.jpg') no-repeat center;
+        background-size: 100% 100%;
+        width: 44px;
+        height: 27px;
+        border: none;
+        z-index: 9999;
+    }
+</style>
+<body>
+<div  style="color: #fff;">
+    <span style="color: #fff">当前动画序号：</span><span id="page-num">0</span>
+</div>
+<div>
+    <button class="btn btn-pre-page" style="color: #000;background: yellow;">执行上一个</button>
+</div>
+<div>
+    <button class="btn btn-next-page" style="color: #000;background: yellow;">执行下一个</button>
+</div>
+<div style="color: #fff;">
+    <span>执行第 </span><input type="text" id="current-num" /><span>个动画</span>
+    <button class="btn btn-goto-page" style="color: #000;background: yellow;">执行</button>
+</div>
+<div style="height: 500px;width: 350px;">
+    <div id="pt-main" class="pt-perspective">
+        <div class="pt-page" style="background-color: #ff6058;"></div>
+        <div class="pt-page" style="background-color: #ffbe2f;"></div>
+        <div class="pt-page" style="background-color: deepskyblue;"></div>
+    </div>
+</div>
+
+<script>
+    var i = 0;
+    PageAnimate.init(".pt-page");
+    $(".btn-goto-page").click(function () {
+        var pageNum = $("#current-num").val();
+        PageAnimate.nextPage(+pageNum);
+        i = +pageNum;
+        $("#page-num").html(pageNum);
+    });
+    $(".btn-pre-page").click(function () {
+        PageAnimate.nextPage(++i);
+        $("#page-num").html(i);
+    });
+    $(".btn-next-page").click(function () {
+        PageAnimate.nextPage(++i);
+        $("#page-num").html(i);
+    });
+</script>
+</body>
+</html>

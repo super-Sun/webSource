@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * 深拷贝实现一：递归
+     */
+    var deepCopy = function (obj) {
+        if (!obj) {
+            return null;
+        }
+        var newObj = null;
+        if (typeof obj === 'object') {
+            newObj = obj instanceof Array ? [] : {};
+            for (var key in obj) {
+                newObj[key] = deepCopy(obj[key]);
+            }
+        } else {
+            newObj = obj;
+        }
+        return newObj;
+    }
+
+    var aa = {
+        name:'123',
+        age:123,
+        son: ['jone'],
+        parent: {
+            father: 'aa',
+            mather: 'bb'
+        },
+        func: function () {
+            console.log(11);
+        }
+    }
+    var bb = [{
+        name:'123',
+        age:123,
+        son: ['jone'],
+        parent: {
+            father: 'aa',
+            mather: 'bb'
+        },
+        func: function () {
+            console.log(11);
+        }
+    }]
+    var copyaa = deepCopy(aa);
+    var copybb = deepCopy(bb);
+    aa === copyaa
+    bb === copybb
+    console.log('end');
+    /**
+     * 深拷贝实现二：JSON 序列化和返序列化
+     * 缺点：1.无法拷贝function
+     *       2.兼容性问题
+     */
+    var copyObj = JSON.parse(JSON.stringify(obj))
+    console.log(JSON.parse(JSON.stringify(aa)) === aa.func);
+
+</script>
+</body>
+</html>
