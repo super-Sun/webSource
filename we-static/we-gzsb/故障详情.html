@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>故障详情</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+        body, html {
+            background-color: #fff;
+            font-size: 14px;
+        }
+
+        .weui-cells {
+            font-size: 14px;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .btn-box {
+            padding: 20px 15px;
+        }
+
+        .weui-btn_primary {
+            background-color: #1b9cf4;
+        }
+        .weui-btn_primary:not(.weui-btn_disabled):active {
+            background-color: #1b9cf4;
+        }
+        .notice-box {
+            padding: 0 15px;
+        }
+        .notice-box .notice-title {
+            color: #ff8209;
+            font-size: 14px;
+        }
+        .notice-box p {
+            color: #666;
+            font-size: 12px;
+        }
+        .weui-dialog__btn {
+            color: #1b9cf4;
+        }
+
+        .weui-dialog__hd {
+            color: #333;
+        }
+        .weui-dialog__bd {
+            color: #333;
+        }
+        .weui-cell__bd {
+            color: #747474;
+
+        }
+        .weui-cell__ft {
+            color: #222;
+            flex: 2;
+        }
+        .weui-photo-browser-modal.weui-photo-browser-modal-visible {
+            z-index: 10;
+        }
+        .complete-state1 {
+            color: #59c18d;
+        }
+        .complete-state2 {
+            color: #ff7979;
+        }
+    </style>
+</head>
+<body>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>上报时间</p>
+        </div>
+        <div class="weui-cell__ft">2018-07-16 10:56:12</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>机器序列号</p>
+        </div>
+        <div class="weui-cell__ft">23GD-2351-DBC2-3546-6256</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <div class="weui-uploader">
+                <div class="weui-uploader__hd">
+                    <p class="weui-uploader__title">故障图片</p>
+                </div>
+                <div class="weui-uploader__bd">
+                    <ul class="weui-uploader__files" id="uploaderFiles">
+                        <li class="weui-uploader__file" onclick="openPicWithIndex(0)" style="background-image:url(http://tp1.sinaimg.cn/2397487324/50/22863943917/1)"></li>
+                        <li class="weui-uploader__file" onclick="openPicWithIndex(1)" style="background-image:url(https://user-gold-cdn.xitu.io/2018/7/9/1647ec6a35f14466?imageslim)"></li>
+                        <li class="weui-uploader__file" onclick="openPicWithIndex(2)"style="background-image:url(https://user-gold-cdn.xitu.io/2018/6/11/163ee322e6d2c827?imageslim)"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>故障描述</p>
+        </div>
+        <div class="weui-cell__ft">违法车辆列表界面，车辆加载不出一 直处于加载状态。</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>状态</p>
+        </div>
+        <div class="weui-cell__ft complete-state2">待修复</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>状态</p>
+        </div>
+        <div class="weui-cell__ft complete-state1">已修复</div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>-->
+<script>
+    // 图片集合
+    var items = ['https://user-gold-cdn.xitu.io/2018/1/16/160fdc404b36a1a0?imageslim', 'https://user-gold-cdn.xitu.io/2018/7/9/1647ec6a35f14466?imageslim', 'https://user-gold-cdn.xitu.io/2018/6/11/163ee322e6d2c827?imageslim']
+    var $pb = $.photoBrowser({
+        items: items
+    });
+    // 根据需要预览图片，index从0开始
+    function openPicWithIndex (index) {
+        $pb.open(index);
+    }
+</script>
+</body>
+</html>

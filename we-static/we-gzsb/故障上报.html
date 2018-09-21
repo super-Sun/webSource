@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>驾考查询</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+        body, html {
+            background-color: #f2f2f2;
+            font-size: 14px;
+        }
+        .weui-cells {
+            font-size: 14px;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .btn-box {
+            padding: 20px 15px;
+        }
+
+        .weui-btn_primary {
+            background-color: #1b9cf4;
+        }
+        .weui-btn_primary:not(.weui-btn_disabled):active {
+            background-color: #1b9cf4;
+        }
+        .notice-box {
+            padding: 0 15px;
+        }
+        .notice-box .notice-title {
+            color: #ff8209;
+            font-size: 14px;
+        }
+        .notice-box p {
+            color: #666;
+            font-size: 12px;
+        }
+        .weui-dialog__btn {
+            color: #1b9cf4;
+        }
+
+        .weui-dialog__hd {
+            color: #333;
+        }
+        .weui-dialog__bd {
+            color: #333;
+        }
+        .important-type:after {
+            content: '*';
+            display: inline-block;
+            color: #e83828;
+        }
+        .weui-textarea-box {
+            background-color: #fff;
+        }
+        .weui-textarea-box .weui-cells__title {
+            color: #000;
+        }
+        .weui-textarea-box .weui-cells:after, .weui-cells:before {
+            display: none;
+        }
+        .hd-title {
+            padding: 5px 0;
+        }
+        .weui-cells_form .weui-cell__ft {
+            font-size: 14px;
+            color: #000;
+        }
+        .container-box1 {
+            padding-top: 52px;
+        }
+        .container-box1 .weui-cells:first-child {
+            margin-top: 0;
+        }
+        .container-box2 * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .container-box2 {
+            padding: 50px 7px 15px 7px;
+        }
+        .container-box2.empty {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -52px;
+            bottom: 0;
+            background: url(icon_bg_empty.png) no-repeat center;
+            background-size: 36%;
+        }
+        .container-box2 .my-items {
+
+        }
+        .container-box2 .my-items .my-item {
+            position: relative;
+            height: 88px;
+            background-color: #fff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 20px 0 20px 18px;
+            font-size: 16px;
+            color: #000;
+        }
+        .container-box2 .my-items .my-item:after {
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-width: 2px 2px 0 0;
+            border-color: #b5b5b6;
+            border-style: solid;
+            -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+            transform: matrix(.71, .71, -.71, .71, 0, 0);
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -3px;
+        }
+        .container-box2 .my-items .my-item .my-item-title {
+            padding: 0 35px 0 30px;
+            overflow:hidden; /*超出的部分隐藏起来。*/
+            white-space:nowrap;/*不显示的地方用省略号...代替*/
+            text-overflow:ellipsis;/* 支持 IE */
+        }
+        .container-box2 .my-items .my-item .my-item-left-title {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            margin-top: -12px;
+        }
+        .container-box2 .my-items .my-item .my-item-subtitle {
+            padding: 0 35px 0 30px;
+            overflow:hidden; /*超出的部分隐藏起来。*/
+            white-space:nowrap;/*不显示的地方用省略号...代替*/
+            text-overflow:ellipsis;/* 支持 IE */
+        }
+        .container-box2 .my-items .my-item.state1 {
+            background: #fff url(icon_state1.png) no-repeat 10px center;
+            background-size: 30px;
+        }
+        .container-box2 .my-items .my-item.state2 {
+            background: #fff url(icon_state2.png) no-repeat 10px center;
+            background-size: 30px;
+        }
+        .weui-navbar {
+            background-color: #f9f9f9;
+        }
+        .weui-navbar .weui-navbar__item {
+            color: #000;
+        }
+        .weui-navbar__item:after {
+            display: none;
+        }
+        .weui-navbar .weui-navbar__item.weui_bar__item_on {
+            color: #2988e9;
+            border-bottom: 2px solid #028be6;
+        }
+    </style>
+</head>
+<body>
+<div class="gzsb-navbar weui-navbar">
+    <div data-type="1" class="weui-navbar__item weui_bar__item_on wysb-view">
+        我要上报
+    </div>
+    <div data-type="2" class="weui-navbar__item sblb-view">
+        上报列表
+    </div>
+</div>
+<!--我要上报-->
+<div class="container-box1">
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>机器序列号</p>
+            </div>
+            <div class="weui-cell__ft">24GD-2354-FS32-F456-65SA</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">故障发生地点</label></div>
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea text-right" placeholder="请输入故障发生地点" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <div class="weui-uploader">
+                    <div class="weui-uploader__hd">
+                        <p class="weui-uploader__title important-type">故障照片</p>
+                    </div>
+                    <div class="weui-uploader__bd">
+                        <ul class="weui-uploader__files" id="uploaderFiles">
+                            <li class="weui-uploader__file weui-uploader__file_status">
+                                <div class="weui-uploader__file-content">
+                                    <i class="weui-icon-warn"></i>
+                                </div>
+                            </li>
+                            <li class="weui-uploader__file weui-uploader__file_status">
+                                <div class="weui-uploader__file-content">50%</div>
+                            </li>
+                        </ul>
+                        <div class="weui-uploader__input-box">
+                            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div style="width: 100%;">
+                <div class="hd-title important-type">故障描述</div>
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请对故障情况进行描述..." rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label important-type">联系人</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input text-right" type="text" placeholder="请输入您的姓名">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label important-type">联系电话</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input text-right" type="tel" placeholder="请输入您的联系电话">
+            </div>
+        </div>
+    </div>
+    <div class="btn-box">
+        <a href="javascript:;" class="weui-btn weui-btn_primary">提交</a>
+    </div>
+</div>
+<!--上报列表-->
+<div class="container-box2" style="display: none;">
+    <div class="my-items">
+        <div class="my-item state1">
+            <div class="my-item-title">违法车来个莱奥的发都是发师傅阿萨德发师傅按时打发大师傅</div>
+            <div class="my-item-subtitle">2018-07-31 14:14:14</div>
+        </div>
+        <div class="my-item state1">
+            <div class="my-item-title">违法车来个莱奥的发都是发师傅阿萨德发师傅按时打发大师傅</div>
+            <div class="my-item-subtitle">2018-07-31 14:14:14</div>
+        </div>
+        <div class="my-item state2">
+            <div class="my-item-title">违法车来个莱奥的发都是发师傅阿萨德发师傅按时打发大师傅违法车来个莱奥的发都是发师傅阿萨德发师傅按时打发大师傅</div>
+            <div class="my-item-subtitle">2018-07-31 14:14:14</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>-->
+
+<script>
+    $(".gzsb-navbar.weui-navbar .weui-navbar__item").click(function () {
+        var $this = $(this);
+        if ($this.hasClass('weui_bar__item_on')) {
+            return;
+        }
+        // tab切换效果
+        $this.addClass('weui_bar__item_on').siblings().removeClass('weui_bar__item_on');
+        //
+        if ($this.attr("data-type") == 1) {
+            // 我要上报
+            $(".container-box2").hide();
+            $(".container-box1").show();
+        } else {
+            // 上报列表
+            $(".container-box1").hide();
+            $(".container-box2").show();
+        }
+    });
+</script>
+
+</body>
+</html>

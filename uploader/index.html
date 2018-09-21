@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="upload">upload</button>
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="uploader.js"></script>
+<script>
+    new Uploader({
+        id: 'upload',
+        action: 'https://www.easy-mock.com/mock/5b2c976f96a0217456c95ecc/example/upload',
+        multiple: false,
+        header: {},
+        data: {},
+        accept: 'image/*',
+        onStart: function () {
+            // 开始上传的回调
+            console.log('start')
+        },
+        onProgress: function () {
+            // 进度的回调
+            console.log('onProgress')
+        },
+        onSuccess: function (res) {
+            // 上传成功的回调
+            console.log(res)
+        },
+        onError: function () {
+            // 上传失败的回调
+            console.log('onError')
+        }
+    })
+</script>
+</body>
+</html>

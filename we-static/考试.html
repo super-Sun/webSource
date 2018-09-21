@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>考试</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+        body, html {
+            background-color: #f2f2f2;
+            font-size: 14px;
+        }
+        .weui-cells {
+            font-size: 14px;
+        }
+        .pick-right-arrow {
+            padding-right: 10px;
+        }
+        .btn-box {
+            padding: 20px 15px;
+        }
+        .checktype-radio .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+            content: '\EA07';
+        }
+        .checktype-checkbox .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+            content: '\EA06';
+        }
+        .lj-items {
+            padding: 43px 12px 0 12px;
+        }
+        .lj-items .lj-item {
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fbfbfb;
+        }
+        .lj-items .lj-item + .lj-item {
+            margin-top:  10px;
+        }
+        .lj-items .lj-item .lj-item-title {
+            color: #666;
+            padding: 14px 13px 0 13px;
+        }
+        .lj-items .lj-item .lj-item-content {
+
+        }
+        .lj-items .lj-item .lj-item-content .weui-cells {
+            background-color: transparent;
+            margin-top: 10px;
+        }
+        .lj-items .lj-item .weui-cells:after, .weui-cells:before, .weui-cell:after, .weui-cell:before {
+            content: '';
+            height: 0;
+            border: none;
+        }
+        .btn-box {
+            padding: 20px 15px;
+        }
+        .notice-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            /*height: 35px;*/
+            padding: 5px 0;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .notice-box .btn-notice {
+            width: 240px;
+            background-color: #1aad19;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 12px;
+            border: none;
+            font-size: 14px;
+            color: #fff;
+        }
+        .rest-time {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="notice-box">
+    <a href="javascript:;" class="weui-btn weui-btn_plain-default btn-notice">请在<span class="rest-time">29分25秒</span>内完成答题</a>
+</div>
+<div class="lj-items">
+    <div class="lj-item checktype-radio">
+        <div class="lj-item-title">1、运输放假啊士大夫哈士大夫哈哈士大夫哈哈是的。解放啦九十点附近拉萨的肌肤。</div>
+        <div class="lj-item-content">
+            <div class="weui-cells weui-cells_checkbox">
+                <label class="weui-cell weui-check__label" for="s11">
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="radio1" id="s11" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>A、的发射点的发射点.</p>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s13">
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="radio1" id="s13" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>B、的发射点的发射点.</p>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s12">
+                    <div class="weui-cell__hd">
+                        <input type="radio" name="radio1" class="weui-check" id="s12">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>C、的发射点的发射点的发射</p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="lj-item checktype-checkbox">
+        <div class="lj-item-title">1、运输放假啊士大夫哈士大夫哈哈士大夫哈哈是的。解放啦九十点附近拉萨的肌肤。</div>
+        <div class="lj-item-content">
+            <div class="weui-cells weui-cells_checkbox">
+                <label class="weui-cell weui-check__label" for="s111">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" class="weui-check" name="checkbox1" id="s111" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>A、的发射点的发射点.</p>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s131">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" class="weui-check" name="checkbox1" id="s131" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>B、的发射点的发射点.</p>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s121">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" name="checkbox1" class="weui-check" id="s121">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>C、的发射点的发射点的发射点的发射点的发射点的发射点的发射点的发射点的发射点的发射点的发射点的发射点</p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn-box">
+    <a href="javascript:;" class="weui-btn weui-btn_primary btn-commit">提交</a>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>-->
+
+<script>
+    // 倒数读秒刷新
+    // 1.设置倒计时时间 '分钟:秒'，如: '30:00'表示30分钟
+    var refreshTimeStr = "30";
+    // 2.获取剩余时间dom
+    var $timeLabel = $(".rest-time");
+    // 3.拆分 分钟和秒
+    var timeList = refreshTimeStr.split(":");
+    var minute = parseInt(timeList[0]) || 0;
+    var second = parseInt(timeList[1]) || 0;
+    var wait = minute * 60 + second;
+    // 4.倒数读秒
+    var restSecondEvent = function () {
+        time($timeLabel);
+    };
+    // 读秒函数
+    function time(o) {
+        if (wait == 0) {
+            o.html("");
+            // reloadView();
+            $(".btn-notice").html("答题结束！");
+            $(".btn-commit").addClass("weui-btn_disabled");
+            //wait = minute * 60 + second;
+            //time(o);
+        } else {
+            var mm = Math.floor(wait / 60);
+            var ss = wait - mm * 60;
+            if (mm < 10) {
+                mm = "0" + mm;
+            }
+            if (ss < 10) {
+                ss = "0" + ss;
+            }
+            o.html(mm + ' : ' + ss);
+            wait--;
+            setTimeout(function () {
+                time(o)
+            }, 1000)
+        }
+    }
+
+    // 开始读秒
+    restSecondEvent();
+</script>
+
+</body>
+</html>

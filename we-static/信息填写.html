@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>信息填写</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+        body, html {
+            background-color: #f2f2f2;
+            font-size: 14px;
+        }
+
+        .weui-cells {
+            font-size: 14px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .pick-right-arrow:after {
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-width: 2px 2px 0 0;
+            border-color: #c8c8cd;
+            border-style: solid;
+            -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+            transform: matrix(.71, .71, -.71, .71, 0, 0);
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -3px;
+        }
+
+        .pick-right-arrow {
+            padding-right: 10px;
+        }
+
+        .btn-box {
+            padding: 20px 15px;
+        }
+
+        .important-type:after {
+            content: '*';
+            display: inline-block;
+            color: #e83828;
+        }
+    </style>
+</head>
+<body>
+<div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label important-type">区域</label></div>
+        <div class="weui-cell__bd pick-right-arrow">
+            <input class="weui-input text-right " placeholder="请选择区域" type="text" id='city-picker'/>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label important-type">学校</label></div>
+        <div class="weui-cell__bd pick-right-arrow school-picker-box">
+            <input class="weui-input text-right school-picker" placeholder="请选择学校" type="text" id="school-picker"/>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label important-type">班级</label></div>
+        <div class="weui-cell__bd">
+            <div class="text-right">
+                <input class="weui-input text-center" style="width: 35px;" placeholder="(1)" type="text"/>年级
+                <input class="weui-input text-center" style="width: 35px;" placeholder="(2)" type="text"/>班
+            </div>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input text-right" type="text" placeholder="请填写姓名">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">阅读人</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input text-right" type="text" placeholder="请填写阅读人">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">阅读联系电话</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input text-right" type="number" pattern="[0-9]*" placeholder="请输入阅读联系电话">
+        </div>
+    </div>
+</div>
+<div class="btn-box">
+    <a href="javascript:;" class="weui-btn weui-btn_primary">提交</a>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>-->
+
+<script>
+    /**
+     * 根据名称获取对应的学校数据
+     * @param name 区域名称
+     * @returns {string[]}
+     */
+    var getSchoolDataWithName = function (name) {
+        // TODO: 根据名称获取对应的学校数据
+        var array = ['学校11', '学校22', '学校33', '学校44', '学校55'];
+        return array;
+    }
+    /**
+     * 根据数据重绘picker
+     * @param $picker
+     * @returns {jQuery}
+     */
+    var reloadSchoolPicker = function (schools) {
+        // 销毁原picker
+        $schoolPicker.data("picker").destroy();
+        // 清空文字
+        $(".school-picker-box").html('<input class="weui-input text-right school-picker" placeholder="请选择学校" type="text" id="school-picker"/>');
+        // 实例化picker
+        $schoolPicker = $("#school-picker").picker({
+            title: "请选择学校",
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: schools
+                }
+            ]
+        });
+    }
+    // 初始化学校选择器
+    var $schoolPicker = $("#school-picker").picker({
+        title: "请选择学校",
+        cols: []
+    });
+    // 初始化区域选择器
+    $("#city-picker").picker({
+        title: "请选择区域",
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['区域1', '区域2', '区域3', '区域4', '区域5']
+            }
+        ],
+        // 改变时间
+        onChange: function (data) {
+            // console.log(data.value);
+            // 获取 当前选择的类型名称
+            var name = data.value[0];
+            // 根据名称 获取对应的联动数据
+            var schools = getSchoolDataWithName(name);
+            // 根据数据重绘picker
+            reloadSchoolPicker(schools);
+        }
+    });
+
+</script>
+
+</body>
+</html>

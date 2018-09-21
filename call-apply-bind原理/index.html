@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    // call的作用：改变方法内部的this指向
+    // call的使用：fn.call(fn2)  ==> 执行fn，fn构造函数内部的this指向fn2
+    // call的原理：
+    // 1.在call的构造函数内部，获取执行作用域中的上下文对象this，即call方法的调用者fn，
+    // 2.将fn的构造函数中的上下文对象this指向call构造函数传入的属相对象，
+    // 3.然后执行fn，也就是执行this()
+
+    // 计算思路：
+    // 1.搞清楚当前上下文this什么
+    // this: ?
+    // 2.call接收的参数是什么？
+    // context：？
+    // 3.执行this时，执行上下文是什么？
+    // this(var this = ? || context)
+
+    // 小试牛刀：
+    // 1.aa.call(bb)
+    // 2.aa.call.call(bb)
+    // 3.aa.call.call.call(bb)
+
+    // 总结：
+    // 1.aa.call(bb)
+    // 2.aa.call.call(bb)
+    // 3.aa.call.call.call(bb) // 结果都与2保持一致
+    // 4.aa[.call][0-9].call(bb) // // 结果都与2保持一致
+
+    Function.prototype.myCall = function () {
+        // 1.获取传入的上下文对象：目标上下文context
+        var args = Array.prototype.slice.call(arguments)
+        var context = args[0]
+        // 2.将this内部的执行上下文替换目标上下文
+        //  eval(....);
+        // 3.执行本地上下文方法
+        this()
+    }
+
+    function aa () {
+        console.log(this, ' + this is aa')
+    }
+
+    function bb () {
+        console.log(this, ' + this is bb')
+    }
+
+    aa.call(bb) //
+    var cc = aa.call
+    cc.call(bb) // 1.aa.call() // this => bb
+    console.log(aa.call.call === aa.call);//
+
+    aa.call.call.call(bb)
+
+    function fn () {
+        console.log(this);
+    }
+
+    fn.call(); // 普通模式下this是window，在严格模式下this是undefined
+    fn.call(null); // 普通模式下this是window，在严格模式下this是null
+    fn.call(undefined); // 普通模式下this是window，在严格模式下this是undefined
+
+
+    // apply方法和call方法的作用是一模一样的，都是用来改变方法的this关键字，并且把方法执行，
+    // 而且在严格模式下和非严格模式下，对于第一个参数是null/undefined这种情况规律也是一样的，
+    // 只是传递函数的的参数的时候有区别。
+    fn.apply(bb, [1, 2, 3]);
+    // bind方法和apply、call稍有不同，bind方法是事先把fn的this改变为我们要想要的结果，
+    // 并且把对应的参数值准备好，以后要用到了，直接的执行即可，
+    // 也就是说bind同样可以改变this的指向，但和apply、call不同就是不会马上的执行。
+    // 注意：bind这个方法在IE6~8下不兼容。
+    var tempFn = fn.bind(aa)
+    tempFn()
+    // 作用：改变函数传参，多个逗号分隔的传参方式 直接传入修改为直接穿传入数组的方式
+    console.log(Math.max.apply(window, [1, 2, 3]));
+    console.log(Math.max(1, 2, 3));
+
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>xxxx</title>
-    <script src="jquery-1.8.3.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
     <script>
         // var item = '';
         //
@@ -57,7 +57,24 @@
 <body>
 <div class="okok" data-sum="0" style="width: 100px;;height: 100px;background: rebeccapurple;"></div>
 <script>
-    $('.okok').doClick();
+    // $('.okok').doClick();
+    var data = {"codEpay":"JF-EPAY2017122015341","userInput":{"input1":"111111"}}
+
+    $.ajax({
+        url: '/index',
+        type: "post",
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(data),
+        success: function (result) {
+            console.log(result);
+        },
+        error: function (err) {
+            console.log(err);
+        }
+    })
+
+
 </script>
 </body>
 </html>
