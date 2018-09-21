@@ -1,4 +1,11 @@
 (function (window, $) {
+    /**
+     * 私有方法-getError
+     * @param action
+     * @param option
+     * @param xhr
+     * @returns {Error}
+     */
     function getError (action, option, xhr) {
         var msg
         if (xhr.response) {
@@ -16,6 +23,11 @@
         return err
     }
 
+    /**
+     * 私有方法-getBody
+     * @param xhr
+     * @returns {*}
+     */
     function getBody (xhr) {
         const text = xhr.responseText || xhr.response
         if (!text) {
@@ -29,6 +41,11 @@
         }
     }
 
+    /**
+     * 私有方法-upload
+     * @param option
+     * @returns {*}
+     */
     function upload (option) {
         if (typeof XMLHttpRequest === 'undefined') {
             return
@@ -85,6 +102,10 @@
         return xhr
     }
 
+    /**
+     * 构造函数主体
+     * @param ops
+     */
     function uploader (ops) {
         var options = {
             id: '', // *目标元素id
@@ -114,6 +135,9 @@
         this.init()
     }
 
+    /**
+     * 原型方法-初始化
+     */
     uploader.prototype.init = function () {
         var self = this
         var options = this.options
@@ -152,9 +176,19 @@
         $("#" + this.options.id).wrap($uploadSelect)
         $("#" + this.options.id).before($fileInput)
     }
+    /**
+     * 原型方法-上传功能主要逻辑
+     * @param file
+     * @param index
+     */
     uploader.prototype.upload = function (file, index) {
         this.post(file, index)
     }
+    /**
+     * 原型方法-上传数据
+     * @param file
+     * @param index
+     */
     uploader.prototype.post = function (file, index) {
         var self = this
         self.options.onStart(file)
@@ -179,5 +213,6 @@
         }
         upload(req_options)
     }
+    // 全局赋值
     window.Uploader = uploader
 })(window, jQuery)
