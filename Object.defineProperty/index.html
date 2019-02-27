@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object.defineProperty</title>
+</head>
+<body>
+<pre>
+    Object.defineProperty() 方法会直接在一个对象上定义一个新属性，
+    或者修改一个对象的现有属性， 并返回这个对象。
+    参见Object.defineProperty语法。
+    在vue.js是通过它实现双向绑定的。俗称属性拦截器。
+</pre>
+<pre>
+    1、语法：
+    Object.defineProperty(obj, prop, descriptor)
+    参数说明：
+    // obj：必需。目标对象
+    // prop：必需。需定义或修改的属性的名字
+    // descriptor：必需。目标属性所拥有的特性
+</pre>
+<script>
+    var obj = {
+        a: '1',
+        b: '2',
+        c: '3'
+    }
+    var value = 11
+    Object.defineProperty(obj, 'd', {
+        enumerable: true,//是可选值，枚举属性，不选的话默认值为false，
+        configurable: false,//是可选值，不选的话默认值为false，
+        writable: false, // 必选，是否可被写
+        value: "张三" // d属性，具体的值
+    })
+    Object.defineProperty(obj, 'e', {
+        // get: function () {
+        //     return value
+        // },
+        // set: function (v) {
+        //     value = v
+        // }
+    })
+    console.log(obj.d);
+    obj.d = 11
+    console.log(obj.d);
+    for (var key in obj) {
+        console.log(key);
+    }
+</script>
+</body>
+</html>

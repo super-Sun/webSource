@@ -6,82 +6,63 @@
     <script src="jquery-1.8.3.js"></script>
     <script src="./jquery.doClick.js"></script>
     <style>
-        .triangle {
-            width: 0;
-            height: 0;
-            border-top: 20px solid #333;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-        }
     </style>
 </head>
 <body>
-<div class="okok" style="width: 100px;;height: 100px;background: rebeccapurple;"></div>
-<div class="nono" style="width: 100px;;height: 100px;background: red;"></div>
-<!--<input type="button" value="a" />-->
-<!--<input type="button" value="b" />-->
-<!--<input type="button" value="c" />-->
-<!--<div class="triangle"></div>-->
-<script>
-    // var arr=document.getElementsByTagName("input"), i=0, len=arr.length;
-    // var array1 = Array.from(arr)
-    // array1.forEach(function (value, index) {
-    //     value.onclick = function(){
-    //         alert(index);
-    //     }
-    // })
-    // for( ; i<len; i++ ){
-    //     arr[i].onclick = function(){
-    //         alert( i );
-    //     }
-    // }
-</script>
+<p>尝试单击、双击以下两个色块，查看控制台输出！</p>
+<p>觉得对你有帮助的朋友，可以来我<a href="https://github.com/super-Sun/jquery.doClick" target="_blank">Github</a>，帮我点个星星！多谢！！</p>
 
+<div class="okok" style="width: 100px;;height: 100px;background: rebeccapurple;cursor: pointer;"></div>
+<div class="nono" style="width: 100px;;height: 100px;background: red;cursor: pointer;"></div>
 <script>
     /*
      *  使用方法:
      *      $(dom).doClick({
-     *          // 单击事件回调
+     *          // 单击事件回调-
      *          onClick: function () {}
      *          // 双击事件回调
      *          dbClick: function () {}
      *      })
      */
     $('.okok').doClick({
-        onClick: function (self) {
+        onClick: function () {
             // 单击事件回调
             console.log('okok单击');
+            // this就是dom自身
+            console.log(this);
         },
         dbClick: function (self) {
+            this === self // trur
             // 双击事件回调
             console.log('okok双击');
+            // this就是dom自身
+            console.log(this);
         }
     });
 
     $('.nono').doClick({
-        onClick: function (self) {
+        onClick: function () {
             // 单击事件回调
             console.log('nono单击');
+            // this就是dom自身
+            console.log(this);
         },
         dbClick: function (self) {
             // 双击事件回调
             console.log('nono双击');
+            // this就是dom自身
+            console.log(this);
         }
     });
 
-    // var time = '2014-07-10 10:21:12';
-    //
-    // var timestamp2 = Date.parse(new Date(time));
-    // console.log(timestamp2);
-    // var array1 = [1, 4, 9, 16];
-    //
-    // // pass a function to map
-    // var map1 = array1.map(function (value, index) {
-    //     console.log(index);
-    //     return value * 2;
-    // });
-    //
-    // console.log(map1);
+    setTimeout(function () {
+        $('.nono').doClick('destroy')
+    }, 5000)
+
+
+
+
+
 </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/zepto/1.1.7/zepto.min.js"></script>-->
+    <!--依赖jquery或者zepto-->
+    <script src="AmapLocationUtil.js"></script>
+</head>
+<body>
+<script>
+    var SUCCESS_CODE = '1'
+    // 用你申请的高德服务api key（注意：区别于其他api，这个需要重新申请，地址 ： https://lbs.amap.com/api/webservice/guide/create-project/get-key）
+    var gd = new AmapLocationUtil({
+        key: '8e21e1ccb4f42178a362cc0797b6b38b'
+    })
+    // 通过经纬度坐标获取详细的位置信息
+    gd.getAmapFormateAddress({
+        // 坐标
+        location: '120.2080411,30.21508',
+        // 坐标类型
+        coordsys: 'gps'
+    }).then(function (result) {
+        if (result.status == SUCCESS_CODE) {
+            console.log(result.regeocode.amapLocations) // 高德坐标
+            console.log(result.regeocode.formatted_address) // 文中地址
+        } else {
+            alert('error: ' + result.info)
+        }
+    })
+
+
+    // 坐标转换：够将用户输入的非高德坐标（GPS坐标、mapbar坐标、baidu坐标）转换成高德坐标。
+    gd.getAmapLocation({
+        locations: '120.2080411,30.21508|116.481499,39.990475|116.481499,39.990375',
+        coordsys: 'gps'
+    }).then(function (result) {
+        if (result.status == SUCCESS_CODE) {
+            console.log(result);
+        } else {
+            console.log(result.info);
+        }
+    })
+</script>
+</body>
+</html>

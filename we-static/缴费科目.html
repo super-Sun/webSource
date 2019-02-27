@@ -84,7 +84,77 @@
 <!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>-->
 
 <script>
+$('.my-item').click(function () {
+    // window.location.href = 'https://www.baidu.com'
+    // return false
+    // window.location.replace('https://www.baidu.com')
+    function parseUrl (url) {
+            debugger
+            if (!url) return {}
+            // 获取 query-string
+            var idx = url.indexOf('?')
+            if (idx < 0) return { 'baseUrl': url, 'anchor': '', 'params': {} }
+            var ret = {
+                'baseUrl': url.substring(0, idx),
+                'anchor': '',
+                'params': {}
+            }
+            var qs = url.substring(idx + 1)
+            // 页内锚链接
+            idx = qs.indexOf('#')
+            if (idx >= 0) {
+                ret.anchor = qs.substring(idx + 1)
+                qs = qs.substring(0, idx)
+            }
+            //
+            var paramArr = qs.split('&')
+            for (var i = 0; i < paramArr.length; i++) {
+                var pair = paramArr[i].split('=')
+                var name = pair[0]
+                var value = pair.length > 1 ? pair[1] : ''
+                if (ret.params.hasOwnProperty(name)) {
+                    var oldValue = ret.params[name]
+                    if (oldValue instanceof Array) {
+                        oldValue.push(value)
+                    } else {
+                        ret.params[name] = [oldValue, value]
+                    }
+                } else {
+                    ret.params[name] = value
+                }
+            }
+        return ret
+    }
+    parseUrl('www.baidu.com?name=123#/aadas')
 
+
+    function parseUrlToObj (url) {
+        var res = {
+            baseUrl: '',
+            params: {},
+            anchor: ''
+        }
+        if (!url) return res
+        // TODO: check->是否是合法的地址
+        var indexAn = url.indexOf('#')
+        if (indexAn > 0) {
+            res.anchor = url.substring(indexAn + 1)
+        }
+        var local = url.substring(0, indexAn)
+        var indexStart = local.indexOf('?')
+
+        if (indexStart > 0) {
+            res.baseUrl = local.substring(0, indexStart)
+
+        } else {
+            res.baseUrl = local
+        }
+    }
+    function getParams () {
+
+    }
+
+})
 </script>
 
 </body>

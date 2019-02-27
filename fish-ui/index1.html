@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./lib/Semantic-UI/semantic.min.css">
+
+</head>
+<body>
+<div class="ui sidebar inverted vertical menu">
+    <a class="item">
+        1
+    </a>
+    <a class="item">
+        2
+    </a>
+    <a class="item">
+        3
+    </a>
+</div>
+<div class="pusher">
+    <!-- Site content !-->
+</div>
+<div class="ui buttons demo">
+    <button class="ui button active">One</button>
+    <button class="ui button primary">Two</button>
+    <button class="ui button">Three</button>
+</div>
+<select name="skills" multiple="" class="ui fluid dropdown">
+    <option value="">Skills</option>
+    <option value="angular">Angular</option>
+    <option value="css">CSS</option>
+    <option value="ember">Ember</option>
+    <option value="html">HTML</option>
+    <option value="javascript">Javascript</option>
+    <option value="meteor">Meteor</option>
+    <option value="node">NodeJS</option>
+</select>
+<div class="ui breadcrumb">
+    <a class="section">Products</a>
+    <div class="divider"> / </div>
+    <div class="active section">Paper Towels</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+<script src="./lib/Semantic-UI/semantic.min.js"></script>
+<script>
+    $('.demo.menu .item, .demo.buttons .button').on('click', function () {
+        if (!$(this).hasClass('dropdown')) {
+            $(this)
+                .addClass('active')
+                .closest('.ui.menu, .ui.buttons')
+                .find('.item, .button')
+                .not($(this))
+                .removeClass('active')
+            ;
+        }
+    })
+    $('select.dropdown').dropdown('set selected', ['meteor', 'ember'])
+    $('.ui.sidebar')
+        .sidebar('toggle')
+
+</script>
+</body>
+</html>

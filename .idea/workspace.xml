@@ -1,51 +1,766 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="f27fce5a-7f82-414e-8d86-37a2fe5abf59" name="ignore" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webSource.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
     <list default="true" id="13571751-6267-46da-a93e-fcbe59c0af0e" name="Default" comment="add files">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Promise/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/call-apply-bind原理/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/api.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/require-setup.djs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.alert.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.dispatch.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.sse.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dispatch/scooper.wboard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploader/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploader/uploader.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api.rar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api/businessName/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api/businessName/instance.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/we-gzsb/icon_bg_empty.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/we-gzsb/icon_state1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/we-gzsb/icon_state2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/we-gzsb/故障上报.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/we-gzsb/故障详情.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/交通安全学习.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/信息填写.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/查看base64图片.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/查询详情.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/缴费科目.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/考试.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/we-static/驾考查询.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/图片上传压缩/demo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/图片上传压缩/index.html" />
-      <change beforePath="$PROJECT_DIR$/单击双击并存/demo.html" afterPath="$PROJECT_DIR$/单击双击并存/demo.html" />
-      <change beforePath="$PROJECT_DIR$/逻辑判断&amp;&amp;/index.html" afterPath="$PROJECT_DIR$/逻辑判断&amp;&amp;/index.html" />
+      <change afterPath="$PROJECT_DIR$/Object.defineProperty/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PubSub/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PubSub/pubsub.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amap/AmapLocationUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amap/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/jquery.easyui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/jquery.easyui.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-am.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-cz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-jp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/locale/easyui-lang-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.combogrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.combotree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.combotreegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.datagrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.datetimebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.datetimespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.filebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.maskedbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.menubutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.messager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.numberbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.numberspinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.passwordbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.radiobutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.sidemenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.splitbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.switchbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.tagbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.textbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.timespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.treegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.validatebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/plugins/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/src/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/angular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/black/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/bootstrap/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/default/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/gray/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/cut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/edit_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/edit_remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/filesave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/large_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/large_clipart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/large_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/large_shapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/large_smartart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/mini_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/mini_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/mini_refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/reload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/sum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/icons/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material-teal/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/material/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/radiobutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/sidemenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/metro/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/jquery-easyui-1.6.6/themes/vue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyui-demo/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/.versions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/accordion.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/accordion.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/ad.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/api.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/breadcrumb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/breadcrumb.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/button.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/card.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/checkbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/checkbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/colorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/colorize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/comment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/container.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dimmer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dimmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dimmer.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dimmer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/divider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/divider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dropdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dropdown.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/dropdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/embed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/embed.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/feed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/feed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/flag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/flag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/form.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/form.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/header.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/image.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/input.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/item.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/label.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/label.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/list.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/loader.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/menu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/message.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/modal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/modal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/nag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/nag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/nag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/nag.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/placeholder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/placeholder.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/popup.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/progress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/progress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/progress.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/progress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rail.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rating.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/rating.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/reveal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/reveal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/search.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/segment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/segment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/shape.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/shape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/shape.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/shape.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sidebar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sidebar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/site.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/site.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/state.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/statistic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/statistic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/step.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/step.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sticky.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sticky.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/sticky.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/tab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/tab.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/tab.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/transition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/transition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/transition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/video.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/visibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/visibility.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/visit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/components/visit.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/semantic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/semantic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/semantic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fish-ui/lib/Semantic-UI/themes/default/assets/images/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-cookie/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-cookie/projectURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/let和const/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/let和const/demo1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/require使用/baseUrl相对位置/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploader/locationUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploader/uploader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/css/jquery-weui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/css/weui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/icon_search/搜索 (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/images/icon_filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/images/icon_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/js/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/js/jquery-2.1.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-static/demo-考试计划/js/jquery-weui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-start/app/Greeter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-start/app/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-start/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-start/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/临时文档/phone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/留守检测/behavior/behavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/留守检测/behavior/behavior.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/留守检测/behavior/icon_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/留守检测/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Promise/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promise/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Promise/jquery-when.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promise/jquery-when.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherhidden/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/otherhidden/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/require使用/demo1/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/require使用/demo1/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploader/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/uploader/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploader/uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/uploader/uploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-static/信息填写.html" beforeDir="false" afterPath="$PROJECT_DIR$/we-static/信息填写.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-static/缴费科目.html" beforeDir="false" afterPath="$PROJECT_DIR$/we-static/缴费科目.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/临时文档/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/临时文档/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/单击双击并存/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/单击双击并存/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/单击双击并存/jquery.doClick/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/单击双击并存/jquery.doClick/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/单击双击并存/jquery.doClick/jquery.doClick.js" beforeDir="false" afterPath="$PROJECT_DIR$/单击双击并存/jquery.doClick/jquery.doClick.js" afterDir="false" />
     </list>
+    <list id="f27fce5a-7f82-414e-8d86-37a2fe5abf59" name="ignore" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -54,152 +769,211 @@
     <ignored path=".idea/webSource.iml" />
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/单击双击并存/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="digitroll.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/数字滚动(纯文本)/digitroll.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="digitroll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/数字滚动(纯文本)/digitroll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <marker date="1521193557667" expanded="true" signature="3818:3874" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="考试.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/we-static/考试.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/call-apply-bind原理/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="79" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uploader.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uploader/uploader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="818">
-              <caret line="119" column="44" lean-forward="true" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
-              <folding>
-                <element signature="e#68#511#0" expanded="false" />
-                <element signature="e#540#763#0" expanded="false" />
-                <element signature="e#794#2248#0" expanded="false" />
-                <element signature="e#4556#4594#0" expanded="false" />
-                <element signature="e#4648#5424#0" expanded="false" />
-                <marker date="1537523257218" expanded="true" signature="3326:3340" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uploader/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="查看base64图片.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/we-static/查看base64图片.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/uploader/index2.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="682">
+                  <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+                  <folding>
+                    <marker date="1547446525845" expanded="true" signature="1321:1330" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick/jquery.doClick.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="484">
+                  <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#381#1957#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick/demo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1320">
+                  <caret line="60" selection-start-line="60" selection-end-line="60" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/PubSub/pubsub.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1540">
+                  <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/PubSub/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/uploader/demo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="110">
+                  <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/uploader/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="682">
+                  <caret line="31" column="49" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="87" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/uploader/locationUtil.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1518">
+                  <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/PubSub/pubsub.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="748">
+                  <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/amap/AmapLocationUtil.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-897">
+                  <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/amap/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-479">
+                  <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/amap/demo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/call-apply-bind原理/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="239">
+                  <caret line="77" column="24" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/uploader/webuploader.html5only.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4113">
+                  <caret line="705" column="27" selection-start-line="705" selection-start-column="20" selection-end-line="705" selection-end-column="27" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Less File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pt-perspective</find>
-      <find>red</find>
-      <find>fade-in</find>
-      <find>fadeIn</find>
-      <find>fadein</find>
-      <find>&lt;%= contextPath %&gt;/</find>
-      <find>contextPath</find>
-      <find>事件</find>
-      <find>each</find>
-      <find>isAnimating</find>
-      <find>.lj-items .lj-item .lj-item-title</find>
-      <find>checkbox1</find>
-      <find>g_timer</find>
-      <find>.weui-cells</find>
-      <find>.important-type:after</find>
-      <find>my-container</find>
-      <find>.container-box2 .my-items .my-item</find>
-      <find>my-item-title</find>
-      <find>my-item-subtitle</find>
-      <find>.weui-navbar</find>
-      <find>padding: 15px 7px;</find>
-      <find>.container-box1</find>
-      <find>important</find>
-      <find>上传</find>
-      <find>canvas =</find>
-      <find>= null</find>
-      <find>,</find>
-      <find>reqs</find>
-      <find>this</find>
-      <find>multiple</find>
+      <find>map-icon</find>
+      <find>recalc</find>
+      <find>.placeholder</find>
+      <find>.select-box .group-title</find>
+      <find>initPicker</find>
+      <find>showPopView</find>
+      <find>nav-item</find>
+      <find>100px</find>
+      <find>select-box box-time</find>
+      <find>btn-search</find>
+      <find>weui-popup__modal</find>
+      <find>selected</find>
+      <find>g_cd</find>
+      <find>月</find>
+      <find>todo</find>
+      <find>考场</find>
+      <find>coord</find>
+      <find>getAmapLocation</find>
+      <find>amapLocations</find>
+      <find>behavior</find>
+      <find>regeocode</find>
+      <find>de</find>
+      <find>BASE_URL</find>
+      <find>$list</find>
+      <find>resize</find>
+      <find>PubSub.callbacks.keys</find>
+      <find>正则</find>
+      <find>findCallbacksMatchKeys</find>
+      <find>console.log</find>
+      <find>debu</find>
     </findStrings>
     <replaceStrings>
       <replace>radio1</replace>
       <replace>container-box2</replace>
+      <replace>系统将自动退出</replace>
+      <replace>// console.log</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -208,88 +982,71 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/require使用/demo1/index2.html" />
-        <option value="$PROJECT_DIR$/require使用/demo1/index2.js" />
-        <option value="$PROJECT_DIR$/dom/事件机制/eventListener.html" />
-        <option value="$PROJECT_DIR$/对象类型判断/index.html" />
-        <option value="$PROJECT_DIR$/jquery-deferred/index.html" />
-        <option value="$PROJECT_DIR$/Promise/ES6-Promise.html" />
-        <option value="$PROJECT_DIR$/Promise/jquery-deferred.html" />
-        <option value="$PROJECT_DIR$/Promise/jquery-when.html" />
-        <option value="$PROJECT_DIR$/lib/jquery-1.8.3.js" />
-        <option value="$PROJECT_DIR$/jQuery源码解读/jqeury.customer.js" />
-        <option value="$PROJECT_DIR$/lib/require.js" />
-        <option value="$PROJECT_DIR$/Promise简单实现/cPromise.js" />
-        <option value="$PROJECT_DIR$/Promise简单实现/demo.html" />
-        <option value="$PROJECT_DIR$/mock数据/demo.html" />
-        <option value="$PROJECT_DIR$/dispatch/ss.less" />
-        <option value="$PROJECT_DIR$/动画转场/demo.html" />
-        <option value="$PROJECT_DIR$/homeFrame/hebeiHome.html" />
-        <option value="$PROJECT_DIR$/dom/eventJZ/eventListener.html" />
-        <option value="$PROJECT_DIR$/深拷贝/demo.html" />
-        <option value="$PROJECT_DIR$/demo20180614/demo.html" />
-        <option value="D:/Documents/Tencent Files/632915651/FileRecv/mapjs.js" />
-        <option value="$PROJECT_DIR$/jQuery源码解读/index.html" />
-        <option value="$PROJECT_DIR$/父子页面通信/parent.html" />
-        <option value="$PROJECT_DIR$/we-static/index.html" />
-        <option value="$PROJECT_DIR$/we-static/考试.html" />
-        <option value="$PROJECT_DIR$/we-static/驾考查询.html" />
-        <option value="$PROJECT_DIR$/we-static/查询详情.html" />
+        <option value="$PROJECT_DIR$/easyui-demo/main.js" />
+        <option value="$PROJECT_DIR$/easyui-demo/demo1.html" />
+        <option value="$PROJECT_DIR$/require使用/baseUrl相对位置/demo.html" />
+        <option value="$PROJECT_DIR$/require使用/demo1/config.js" />
+        <option value="$PROJECT_DIR$/require使用/demo1/main.js" />
+        <option value="$PROJECT_DIR$/let和const/demo1.html" />
+        <option value="$PROJECT_DIR$/let和const/demo1.js" />
+        <option value="$PROJECT_DIR$/临时文档/phone.js" />
+        <option value="$PROJECT_DIR$/otherhidden/demo.html" />
         <option value="$PROJECT_DIR$/we-static/信息填写.html" />
-        <option value="$PROJECT_DIR$/逻辑判断&amp;&amp;/index.html" />
-        <option value="$PROJECT_DIR$/we-static/交通安全学习.html" />
+        <option value="$PROJECT_DIR$/webpack-start/app/Greeter.js" />
+        <option value="$PROJECT_DIR$/webpack-start/app/main.js" />
+        <option value="$PROJECT_DIR$/webpack-start/package.json" />
+        <option value="$PROJECT_DIR$/webpack-start/public/index.html" />
+        <option value="$PROJECT_DIR$/webpack-start/webpack.config.js" />
         <option value="$PROJECT_DIR$/we-static/缴费科目.html" />
-        <option value="$PROJECT_DIR$/we-static/故障上报2.html" />
-        <option value="$PROJECT_DIR$/we-static/故障详情.html" />
-        <option value="$PROJECT_DIR$/we-static/故障上报.html" />
-        <option value="$PROJECT_DIR$/we-static/we-gzsb/故障上报.html" />
-        <option value="$PROJECT_DIR$/dispatch/scooper.alert.js" />
-        <option value="$PROJECT_DIR$/图片上传压缩/index.html" />
-        <option value="$PROJECT_DIR$/Promise/index.html" />
-        <option value="$PROJECT_DIR$/图片上传压缩/demo.html" />
-        <option value="$PROJECT_DIR$/vue/api/bjsgcl/instance.js" />
-        <option value="$PROJECT_DIR$/vue/api/bjsgcl/index.js" />
-        <option value="$PROJECT_DIR$/vue/api/util.js" />
-        <option value="$PROJECT_DIR$/vue/api/index.js" />
+        <option value="$PROJECT_DIR$/jquery-cookie/index2.html" />
+        <option value="$PROJECT_DIR$/jquery-cookie/projectURL.js" />
+        <option value="$PROJECT_DIR$/jquery-cookie/main.js" />
+        <option value="$PROJECT_DIR$/jquery-cookie/index.html" />
+        <option value="$PROJECT_DIR$/we-static/demo-考试计划2/html/demo/exam.html" />
+        <option value="$PROJECT_DIR$/we-static/demo-考试计划/css/weui.min.css" />
+        <option value="$PROJECT_DIR$/we-static/demo-考试计划/js/jquery-2.1.4.js" />
+        <option value="$PROJECT_DIR$/we-static/demo-考试计划/js/fastclick.js" />
+        <option value="$PROJECT_DIR$/fish-ui/index1.html" />
+        <option value="$PROJECT_DIR$/mock数据/demo.less" />
+        <option value="$PROJECT_DIR$/Object.definePorperty/index.html" />
+        <option value="$PROJECT_DIR$/Object.defineProperty/index.html" />
         <option value="$PROJECT_DIR$/单击双击并存/demo.html" />
-        <option value="$PROJECT_DIR$/数字滚动(纯文本)/digitroll.html" />
-        <option value="$PROJECT_DIR$/we-static/查看base64图片.html" />
-        <option value="$PROJECT_DIR$/call原理/index.html" />
-        <option value="$PROJECT_DIR$/call-apply-bind原理/index.html" />
-        <option value="$PROJECT_DIR$/uploader/uploader.css" />
+        <option value="$PROJECT_DIR$/we-static/demo-考试计划/html/demo/exam.html" />
+        <option value="$PROJECT_DIR$/Promise/demo.html" />
         <option value="$PROJECT_DIR$/uploader/uploader.js" />
         <option value="$PROJECT_DIR$/uploader/index.html" />
+        <option value="$PROJECT_DIR$/uploader/locationUtil.js" />
+        <option value="$PROJECT_DIR$/uploader/demo.html" />
+        <option value="$PROJECT_DIR$/amap/locationUtil.js" />
+        <option value="$PROJECT_DIR$/amap/index.html" />
+        <option value="$PROJECT_DIR$/we-static/嘉兴违法举报/index.html" />
+        <option value="$PROJECT_DIR$/we-static/嘉兴违法举报/css/home.less" />
+        <option value="$PROJECT_DIR$/留守检测/demo.html" />
+        <option value="$PROJECT_DIR$/Promise/jquery-when.html" />
+        <option value="$PROJECT_DIR$/amap/demo2.html" />
+        <option value="$PROJECT_DIR$/amap/AmapLocationUtil.js" />
+        <option value="$PROJECT_DIR$/amap/demo.html" />
+        <option value="$USER_HOME$/Desktop/host/webuploader.html5only.js" />
+        <option value="$PROJECT_DIR$/uploader/webuploader.html5only.js" />
+        <option value="$PROJECT_DIR$/uploader/index2.html" />
+        <option value="$PROJECT_DIR$/单击双击并存/jquery.doClick/jquery.doClick.js" />
+        <option value="$PROJECT_DIR$/单击双击并存/jquery.doClick/demo.html" />
+        <option value="$PROJECT_DIR$/PubSub/index.html" />
+        <option value="$PROJECT_DIR$/PubSub/pubsub.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="156" />
-    <option name="width" value="1096" />
-    <option name="height" value="1896" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,40 +1057,106 @@
             <path>
               <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
               <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="amap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
               <item name="call-apply-bind原理" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="demo20180614" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="Promise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="Promise简单实现" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
               <item name="webSource" type="462c0819:PsiDirectoryNode" />
               <item name="uploader" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="we-static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="we-static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-考试计划2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="we-static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-考试计划2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="we-static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-考试计划2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="suggest_consult" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="单击双击并存" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="单击双击并存" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery.doClick" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webSource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webSource" type="462c0819:PsiDirectoryNode" />
+              <item name="留守检测" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-dealonline" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\gitCode\webSource\vue" />
-      <recent name="E:\gitCode\webSource\we-static" />
-      <recent name="E:\gitCode\webSource\demo20180614" />
-      <recent name="E:\gitCode\webSource\homeFrame\hbHome\js" />
-      <recent name="E:\gitCode\webSource\homeFrame" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\gitCode\webSource\we-static\we-gzsb" />
-      <recent name="E:\gitCode\webSource" />
+      <recent name="E:\gitCode\webSource\uploader" />
+      <recent name="E:\gitCode\webSource\we-static\demo-考试计划\icon_search" />
+      <recent name="E:\gitCode\webSource\we-static" />
+      <recent name="E:\gitCode\webSource\vue" />
+      <recent name="E:\gitCode\webSource\留守检测\behavior" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gitCode\webSource\amap" />
+      <recent name="E:\gitCode\webSource\fish-ui\lib" />
+      <recent name="E:\gitCode\webSource\we-static\demo-考试计划\js" />
+      <recent name="E:\gitCode\webSource\we-static\demo-考试计划\css" />
+      <recent name="E:\gitCode\webSource\we-static\demo-考试计划\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,9 +1170,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -404,7 +1224,30 @@
       <workItem from="1534412320638" duration="1724000" />
       <workItem from="1534845169990" duration="15047000" />
       <workItem from="1536637941199" duration="2095000" />
-      <workItem from="1537423519471" duration="27100000" />
+      <workItem from="1537423519471" duration="43445000" />
+      <workItem from="1538999412905" duration="40230000" />
+      <workItem from="1539226443993" duration="593000" />
+      <workItem from="1539228391843" duration="8000" />
+      <workItem from="1539251431304" duration="10000" />
+      <workItem from="1539256554872" duration="3774000" />
+      <workItem from="1539327156261" duration="4394000" />
+      <workItem from="1539740648014" duration="465000" />
+      <workItem from="1539942665487" duration="146000" />
+      <workItem from="1540170328167" duration="2577000" />
+      <workItem from="1540181999984" duration="11000" />
+      <workItem from="1540347543024" duration="12170000" />
+      <workItem from="1541656045772" duration="107000" />
+      <workItem from="1542682240724" duration="66450000" />
+      <workItem from="1544063082386" duration="13471000" />
+      <workItem from="1544685304788" duration="10824000" />
+      <workItem from="1545290603361" duration="598000" />
+      <workItem from="1545312760894" duration="4000" />
+      <workItem from="1545719822195" duration="3010000" />
+      <workItem from="1545984361165" duration="5498000" />
+      <workItem from="1546570549262" duration="31226000" />
+      <workItem from="1547088234527" duration="16336000" />
+      <workItem from="1550731830034" duration="12662000" />
+      <workItem from="1551236693499" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1524035660132</created>
@@ -455,411 +1298,351 @@
       <option name="project" value="LOCAL" />
       <updated>1531987327388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add files">
+      <created>1537524933825</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537524933825</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231516000" />
+    <option name="totallyTimeSpent" value="473284000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="156" width="1096" height="1896" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2911153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63003266" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13540569" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32802728" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.63003266" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="2012" y="-431" width="896" height="1696" id="Documentation" order="3" type="FLOATING" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add: Promise简单实现" />
     <MESSAGE value="add files" />
     <option name="LAST_COMMIT_MESSAGE" value="add files" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homeFrame/hbHome/js/mainStyle.js" />
-    <entry file="file://$PROJECT_DIR$/homeFrame/hbHome/js/jquery-1.8.3.js" />
-    <entry file="file://$PROJECT_DIR$/homeFrame/hebeiHome.html" />
-    <entry file="file://$PROJECT_DIR$/父子页面通信/child.html">
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/css/suggest_consult/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="837">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/event对象.html">
+    <entry file="file://$PROJECT_DIR$/jquery-cookie/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="432">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo20180614/jquery-1.8.3.js">
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/js/suggest_consult/default.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划2/html/demo/exam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        <state relative-caret-position="2376">
+          <caret line="88" column="54" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo20180614/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Documents/Tencent Files/632915651/FileRecv/mapjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="696" column="0" lean-forward="false" selection-start-line="696" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery源码解读/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/父子页面通信/parent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dom/eventJZ/eventListener.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="66" column="7" lean-forward="false" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/深拷贝/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="59" column="7" lean-forward="false" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/动画转场/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="150" column="6" lean-forward="true" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/动画转场/jquery.pageAnimate/js/animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/逻辑判断&amp;&amp;/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/we-gzsb/故障上报.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/驾考查询.html">
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/css/weui.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
-          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <caret line="4" column="50917" selection-start-line="4" selection-start-column="50917" selection-end-line="4" selection-end-column="50917" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/css/jquery-weui.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/js/jquery-weui.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/js/jquery-2.1.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="9178" column="7" lean-forward="true" selection-start-line="9178" selection-start-column="7" selection-end-line="9178" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/js/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22680">
+          <caret line="840" column="5" selection-start-line="840" selection-start-column="5" selection-end-line="840" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/we-static/缴费科目.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="2187">
+          <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/查询详情.html">
+    <entry file="file://$PROJECT_DIR$/webpack-start/node_modules/webpack/lib/Template.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fish-ui/lib/Semantic-UI/semantic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="80" column="10" lean-forward="false" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock数据/demo.less" />
+    <entry file="file://$PROJECT_DIR$/fish-ui/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/we-gzsb/故障详情.html">
+    <entry file="file://$PROJECT_DIR$/Object.defineProperty/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/we-gzsb/故障上报.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="100" lean-forward="false" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispatch/scooper.alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="26" column="90" lean-forward="false" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispatch/require-setup.djs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispatch/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispatch/ss.less" />
-    <entry file="file://$PROJECT_DIR$/dispatch/scooper.wboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="92" column="5" lean-forward="false" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="14166" column="4" lean-forward="false" selection-start-line="14166" selection-start-column="4" selection-end-line="14166" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Promise/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Promise/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/图片上传压缩/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="94" column="6" lean-forward="false" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/模板引擎.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Documents/Tencent Files/632915651/FileRecv/request_v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/api/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/api/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/图片上传压缩/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/api/businessName/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/api/businessName/instance.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/api/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/api/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack-start/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4725">
-          <caret line="175" column="13" lean-forward="false" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/api/businessName/instance.js">
+    <entry file="file://$PROJECT_DIR$/留守检测/behavior/behavior.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/单击双击并存/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding />
+        <state>
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数字滚动(纯文本)/demo.less">
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划/html/demo/exam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="704">
+          <caret line="395" column="35" selection-start-line="395" selection-start-column="35" selection-end-line="395" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数字滚动(纯文本)/digitroll.html">
+    <entry file="file://$PROJECT_DIR$/Promise简单实现/demo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Promise/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="351">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/交通安全学习.html">
+    <entry file="file://$PROJECT_DIR$/Promise/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="1134">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/we-static/信息填写.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2241">
-          <caret line="83" column="14" lean-forward="false" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="4" selection-start-column="4" selection-end-line="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数字滚动(纯文本)/digitroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <marker date="1521193557667" expanded="true" signature="3818:3874" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/考试.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we-static/查看base64图片.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/call-apply-bind原理/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="79" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/动画转场/jquery.pageAnimate/js/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/we-static/嘉兴违法举报/css/home.less" />
+    <entry file="file://$PROJECT_DIR$/we-static/嘉兴违法举报/index.html" />
+    <entry file="file://$PROJECT_DIR$/留守检测/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="4" column="17338" lean-forward="false" selection-start-line="4" selection-start-column="17338" selection-end-line="4" selection-end-column="17338" />
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploader/uploader.css">
+    <entry file="file://$PROJECT_DIR$/留守检测/behavior/behavior.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="1512">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploader/index.html">
+    <entry file="file://$PROJECT_DIR$/amap/demo2.html" />
+    <entry file="file://$PROJECT_DIR$/we-static/notice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="704">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uploader/uploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="119" column="44" lean-forward="true" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+        <state relative-caret-position="4532">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
           <folding>
-            <element signature="e#68#511#0" expanded="false" />
-            <element signature="e#540#763#0" expanded="false" />
-            <element signature="e#794#2248#0" expanded="false" />
-            <element signature="e#4556#4594#0" expanded="false" />
-            <element signature="e#4648#5424#0" expanded="false" />
-            <marker date="1537523257218" expanded="true" signature="3326:3340" ph="..." />
+            <marker date="1546580802361" expanded="true" signature="3924:3938" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/汇总/vue-easy-uploader-master/node_modules/_bonjour@3.5.0@bonjour/lib/mdns-server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we-static/demo-考试计划2/js/suggest_consult/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="54" column="56" lean-forward="true" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <marker date="1547446525845" expanded="true" signature="1321:1330" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick/jquery.doClick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding>
+            <element signature="e#381#1957#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/单击双击并存/jquery.doClick.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/locationUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PubSub/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Promise/jquery-when.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PubSub/pubsub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amap/AmapLocationUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amap/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amap/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/call-apply-bind原理/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/webuploader.html5only.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4113">
+          <caret line="705" column="27" selection-start-line="705" selection-start-column="20" selection-end-line="705" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
