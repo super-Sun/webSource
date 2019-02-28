@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.every</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.返回值是一个布尔值，只有数组中所有的元素都满足条件才做返回true
+     */
+
+    /**
+     * 1.Array的原型方法：every
+     * Array.prototype.every: 方法测试数组的所有元素是否都通过了指定函数的测试。
+     */
+    /**
+     * 语法：arr.every(callback[, thisArg])
+     *
+     * 参数：
+       callback：用来测试每个元素的函数。callback 被调用时传入三个参数：元素值，元素的索引，原数组。
+       thisArg：执行 callback 时使用的 this 值
+     */
+
+    /**
+     * 方法描述：
+     * every 方法为数组中的每个元素执行一次 callback 函数，直到它找到一个使 callback 返回 false（表示可转换为布尔值 false 的值）的元素。
+     * 如果发现了一个这样的元素，every 方法将会立即返回 false。否则，callback 为每一个元素返回 true，every 就会返回 true。
+     * callback 只会为那些已经被赋值的索引调用。不会为那些被删除或从来没被赋值的索引调用。
+     *
+     * concat方法不会改变this或任何作为参数提供的数组，而是返回一个浅拷贝，它包含与原始数组相结合的相同元素的副本。
+     * 原始数组的元素将复制到新数组中，如下所示：
+     * 1）对象引用（而不是实际对象）：concat将对象引用复制到新数组中。 原始数组和新数组都引用相同的对象。
+     *    也就是说，如果引用的对象被修改，则更改对于新数组和原始数组都是可见的。 这包括也是数组的数组参数的元素。
+     * 2）数据类型如字符串，数字和布尔（不是String，Number 和 Boolean 对象）：concat将字符串和数字的值复制到新数组中。
+     */
+    var alpha = ['a', 'b', 'c'];
+    var numeric = [1, 2, 3];
+
+    alpha.concat(numeric);
+    // result in ['a', 'b', 'c', 1, 2, 3]
+
+    var alpha = ['a', 'b', 'c'];
+
+    var alphaNumeric = alpha.concat(1, [2, 3]);
+
+    console.log(alphaNumeric);
+    // results in ['a', 'b', 'c', 1, 2, 3]
+
+    var num1 = [[1]];
+    var num2 = [2, [3]];
+
+    var nums = num1.concat(num2);
+
+    console.log(nums);
+    // results in [[1], 2, [3]]
+
+    // modify the first element of num1
+    num1[0].push(4);
+
+    console.log(nums);
+    // results in [[1, 4], 2, [3]]
+
+    /**
+     * 兼容旧环境
+     */
+    if (!Array.prototype.every)
+    {
+        Array.prototype.every = function(fun /*, thisArg */)
+        {
+            'use strict';
+
+            if (this === void 0 || this === null)
+                throw new TypeError();
+
+            var t = Object(this);
+            var len = t.length >>> 0;
+            if (typeof fun !== 'function')
+                throw new TypeError();
+
+            var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
+            for (var i = 0; i < len; i++)
+            {
+                if (i in t && !fun.call(thisArg, t[i], i, t))
+                    return false;
+            }
+
+            return true;
+        };
+    }
+</script>
+</body>
+</html>

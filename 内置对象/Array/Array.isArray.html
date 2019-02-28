@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.isArray</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.Array.prototype是一个数组
+     * 2.Array.isArray在存在多个iframe的情况下，isArray的识别要被instanceof可靠
+     */
+
+    /**
+     * Array的类方法 ES6
+     * Array.isArray() 用于确定传递的值是否是一个 Array。
+     */
+    // 下面的函数调用都返回 true
+    Array.isArray([]);
+    Array.isArray([1]);
+    Array.isArray(new Array());
+    // 鲜为人知的事实：其实 Array.prototype 也是一个数组。
+    Array.isArray(Array.prototype);
+
+    // 下面的函数调用都返回 false
+    Array.isArray();
+    Array.isArray({});
+    Array.isArray(null);
+    Array.isArray(undefined);
+    Array.isArray(17);
+    Array.isArray('Array');
+    Array.isArray(true);
+    Array.isArray(false);
+    Array.isArray({ __proto__: Array.prototype });
+
+    /**
+     * 兼容低版本浏览器
+     */
+    if (!Array.isArray) {
+        Array.isArray = function (arg) {
+            return Object.prototype.toString.call(arg) === '[object Array]';
+        };
+    }
+
+    /**
+     * instanceof 和 isArray
+     * 当检测Array实例时, Array.isArray 优于 instanceof,因为Array.isArray能检测iframes.
+     */
+    var iframe = document.createElement('iframe');
+    document.body.appendChild(iframe);
+    var xArray = window.frames[window.frames.length-1].Array;
+    var arr = new xArray(1,2,3); // [1,2,3]
+
+    // Correctly checking for Array
+    Array.isArray(arr);  // true
+    // Considered harmful, because doesn't work though iframes
+    arr instanceof Array; // false
+</script>
+</body>
+</html>

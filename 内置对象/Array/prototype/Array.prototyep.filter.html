@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.filter</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.筛选满足filterFn条件的元素，并将所有满足条件的元素，集合成数组放回，原数组不受改变
+     */
+
+    /**
+     * 1.Array的原型方法：filter
+     * Array.prototype.filter: 方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。
+     */
+    /**
+     * 语法：var new_array = arr.filter(callback(element[, index[, array]])[, thisArg])
+     *
+     * 参数：
+     callback：用来测试每个元素的函数。callback 被调用时传入三个参数：element元素值，index元素的索引，array原数组。
+     thisArg：执行 callback 时使用的 this 值
+     *
+     * 返回：一个新的通过测试的元素的集合的数组，如果没有通过测试则返回空数组
+     */
+
+    /**
+     * 方法描述：
+     * filter 为数组中的每个元素调用一次 callback 函数，并利用所有使得 callback 返回 true 或 等价于 true 的值 的元素创建一个新数组。
+     * callback 只会在已经赋值的索引上被调用，对于那些已经被删除或者从未被赋值的索引不会被调用。
+     * 那些没有通过 callback 测试的元素会被跳过，不会被包含在新数组中。
+     * filter 不会改变原数组，它返回过滤后的新数组。
+     */
+
+    // 下例使用 filter 创建了一个新数组，该数组的元素由原数组中值大于 10 的元素组成。
+
+    function isBigEnough(element) {
+        return element >= 10;
+    }
+
+    var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+    // filtered is [12, 130, 44]
+    /**
+     * 兼容旧环境
+     */
+    if (!Array.prototype.filter) {
+        Array.prototype.filter = function (fun /* , thisArg*/) {
+            "use strict";
+
+            if (this === void 0 || this === null)
+                throw new TypeError();
+
+            var t = Object(this);
+            var len = t.length >>> 0;
+            if (typeof fun !== "function")
+                throw new TypeError();
+
+            var res = [];
+            var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
+            for (var i = 0; i < len; i++) {
+                if (i in t) {
+                    var val = t[i];
+
+                    // NOTE: Technically this should Object.defineProperty at
+                    //       the next index, as push can be affected by
+                    //       properties on Object.prototype and Array.prototype.
+                    //       But that method's new, and collisions should be
+                    //       rare, so use the more-compatible alternative.
+                    if (fun.call(thisArg, val, i, t))
+                        res.push(val);
+                }
+            }
+
+            return res;
+        };
+    }
+</script>
+</body>
+</html>
