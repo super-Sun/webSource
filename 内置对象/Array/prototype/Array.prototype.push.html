@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.push</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.在类数组后面，添加一个或者多个元素
+     * 2.push 方法有意具有通用性。该方法和 call() 或 apply() 一起使用时，可应用在类似数组的对象上。
+     * push 方法根据 length 属性来决定从哪里开始插入给定的值。
+     * 如果 length 不能被转成一个数值，则插入的元素索引为 0，包括 length 不存在时。
+     * 当 length 不存在时，将会创建它。
+     */
+
+    /**
+     * 1.Array的原型方法：
+     * Array.prototype.push: 方法将一个或多个元素添加到数组的末尾，并返回该数组的新长度。
+     *
+     * 语法
+     * arr.push(element1, ..., elementN)
+     *
+     * 参数
+     * elementN： 被添加到数组末尾的元素。
+     *
+     * 返回值
+     * 当调用该方法时，新的 length 属性值将被返回。
+     *
+     */
+
+    /**
+     * 方法描述：push方法将值追加到数组中。
+     */
+
+    // 举例
+    var sports = ["soccer", "baseball"];
+    var total = sports.push("football", "swimming");
+
+    console.log(sports);
+    // ["soccer", "baseball", "football", "swimming"]
+
+    console.log(total);
+    // 4
+</script>
+</body>
+</html>

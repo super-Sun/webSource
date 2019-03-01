@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.findIndex</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.遍历数组中的每一项，找到匹配项后立刻返回结果，找不到则返回undefined
+     * 2.如果你需要找到一个元素的位置或者一个元素是否存在于数组中，使用
+     * Array.prototype.indexOf() 或 Array.prototype.includes()。
+     */
+
+    /**
+     * 1.Array的原型方法：findIndex
+     * Array.prototype.findIndex: 方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。
+     */
+    /**
+     * 语法：arr.findIndex(callback[, thisArg])
+     *
+     * 参数：
+     callback：用来测试每个元素的函数。callback 被调用时传入三个参数：element元素值，index元素的索引，array原数组。
+     thisArg：执行 callback 时使用的 this 值
+     *
+     * 返回：当某个元素通过 callback 的测试时，返回数组中的一个值，否则返回 undefined
+     */
+
+    /**
+     * 方法描述：
+     * findIndex方法对数组中的每个数组索引0..length-1（包括）执行一次callback函数，直到找到一个callback函数返回真实值（强制为true）的值。
+     * 如果找到这样的元素，findIndex会立即返回该元素的索引。如果回调从不返回真值，或者数组的length为0，则findIndex返回-1。
+     * 与某些其他数组方法（如Array#some）不同，在稀疏数组中，即使对于数组中不存在的条目的索引也会调用回调函数。
+     */
+    // 举例：查找数组中首个质数元素的索引
+    function isPrime(element, index, array) {
+        var start = 2;
+        while (start <= Math.sqrt(element)) {
+            if (element % start++ < 1) {
+                return false;
+            }
+        }
+        return element > 1;
+    }
+
+    console.log([4, 6, 8, 12].findIndex(isPrime)); // -1, not found
+    console.log([4, 6, 7, 12].findIndex(isPrime)); // 2
+
+    /**
+     * 兼容旧环境
+     */
+    // https://tc39.github.io/ecma262/#sec-array.prototype.findIndex
+    if (!Array.prototype.findIndex) {
+        Object.defineProperty(Array.prototype, 'findIndex', {
+            value: function (predicate) {
+                // 1. Let O be ? ToObject(this value).
+                if (this == null) {
+                    throw new TypeError('"this" is null or not defined');
+                }
+
+                var o = Object(this);
+
+                // 2. Let len be ? ToLength(? Get(O, "length")).
+                var len = o.length >>> 0;
+
+                // 3. If IsCallable(predicate) is false, throw a TypeError exception.
+                if (typeof predicate !== 'function') {
+                    throw new TypeError('predicate must be a function');
+                }
+
+                // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
+                var thisArg = arguments[1];
+
+                // 5. Let k be 0.
+                var k = 0;
+
+                // 6. Repeat, while k < len
+                while (k < len) {
+                    // a. Let Pk be ! ToString(k).
+                    // b. Let kValue be ? Get(O, Pk).
+                    // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
+                    // d. If testResult is true, return k.
+                    var kValue = o[k];
+                    if (predicate.call(thisArg, kValue, k, o)) {
+                        return k;
+                    }
+                    // e. Increase k by 1.
+                    k++;
+                }
+
+                // 7. Return -1.
+                return -1;
+            }
+        });
+    }
+</script>
+</body>
+</html>

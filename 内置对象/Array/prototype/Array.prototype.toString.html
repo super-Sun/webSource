@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.
+     */
+
+    /**
+     * 1.Array的原型方法：
+     * Array.prototype.toString: 返回一个字符串，表示指定的数组及其元素。
+     *
+     * 返回值：
+     * 一个表示指定的数组及其元素的字符串。
+     */
+
+    /**
+     * 方法描述：
+     * Array对象覆盖了Object的 toString 方法。对于数组对象，toString 方法连接数组并返回一个字符串，其中包含用逗号分隔的每个数组元素。
+     * 当一个数组被作为文本值或者进行字符串连接操作时，将会自动调用其 toString 方法。
+     */
+    var array1 = [1, 2, 'a', '1a'];
+
+    console.log(array1.toString());
+    // expected output: "1,2,a,1a"
+
+
+</script>
+</body>
+</html>

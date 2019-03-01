@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.forEach</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.forEach会对数组中的每个元素进行遍历。遍历的过程中无法提前终止遍历，除非报错或者手动抛出异常。
+     * 2.在使用forEach的时候，如果条件允许，可以使用filter先对数组进行筛选，再用forEach函数处理。
+     * 3.原理可以理解为for循环的简写
+     */
+
+    /**
+     * 1.Array的原型方法：
+     * Array.prototype.forEach: 方法对数组的每个元素执行一次提供的函数。
+     * 语法：arr.forEach(callback[, thisArg]);
+     *
+     * 参数：
+     callback：用来测试每个元素的函数。callback 被调用时传入三个参数：element元素值，index元素的索引，array原数组。
+     thisArg：执行 callback 时使用的 this 值
+     *
+     * 返回：undefined
+     */
+
+
+    /**
+     * 方法描述：
+     * forEach 方法按升序为数组中含有效值的每一项执行一次callback 函数，那些已删除或者未初始化的项将被跳过（例如在稀疏数组上）。
+     */
+    /**
+     * 下面的例子会输出"one", "two", "four"。当到达包含值"two"的项时，整个数组的第一个项被移除了，
+     * 这导致所有剩下的项上移一个位置。因为元素 "four"现在在数组更前的位置，"three"会被跳过。
+     * forEach()不会在迭代之前创建数组的副本。
+     */
+    // forEach
+    function forEachFn() {
+        var words = ['one', 'two', 'three', 'four'];
+        words.forEach(function(word) {
+            console.log(word);
+            if (word === 'two') {
+                words.shift();
+            }
+        });
+    }
+    // for
+    function forFn() {
+        var words = ['one', 'two', 'three', 'four'];
+        for (var i = 0; i < words.length; i++) {
+            //console.log('i:'+ i)
+            //console.log('length:'+ words.length)
+            console.log('word:'+words[i])
+            if (words[i] == 'two') {
+                words.shift();
+                //  console.log(words.toString());
+            }
+        }
+    }
+    // 两者输出结果一样
+    // one
+    // two
+    // four
+
+</script>
+</body>
+</html>

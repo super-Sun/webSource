@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.includes</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.判断是个数组内是否存在某个值。可以设置搜索的起始位置，正数表示从第n+1位置开始，负数表示从length - n 开始，默认为0。
+     * 负数大于长度，则从第0位开始，正数大于长度则，则直接返回false
+     *
+     * 2.includes() 方法有意设计为通用方法。
+     * 它不要求this值是数组对象，所以它可以被用于其他类型的对象 (比如类数组对象)。
+     * 下面的例子展示了 在函数的arguments对象上调用的includes() 方法。
+     * console.log([].includes.call(arguments, 'a'));
+     */
+
+    /**
+     * 1.Array的原型方法：includes
+     * Array.prototype.includes: 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。
+     *
+     * 语法：arr.includes(valueToFind[, fromIndex])
+     *
+     * 参数：
+     valueToFind：需要查找的元素值。
+     fromIndex ：从该索引处开始查找 searchElement。如果为负值，则按升序从 array.length - fromIndex 的索引开始搜索。默认为 0。
+     *
+     * 返回值
+     * 一个 Boolean。
+     */
+
+    /**
+     * 方法描述：
+     */
+
+    // 举例：
+    var array1 = [1, 2, 3];
+
+    console.log(array1.includes(2));
+    // expected output: true
+
+    var pets = ['cat', 'dog', 'bat'];
+
+    console.log(pets.includes('cat'));
+    // expected output: true
+
+    console.log(pets.includes('at'));
+    // expected output: false
+
+    [1, 2, 3].includes(2);     // true
+    [1, 2, 3].includes(4);     // false
+    [1, 2, 3].includes(3, 3);  // false
+    [1, 2, 3].includes(3, -1); // true
+    [1, 2, NaN].includes(NaN); // true
+
+    // includes() 作为一个通用方法
+    /**
+     * includes() 方法有意设计为通用方法。
+     * 它不要求this值是数组对象，所以它可以被用于其他类型的对象 (比如类数组对象)。
+     * 下面的例子展示了 在函数的arguments对象上调用的includes() 方法。
+     */
+    (function() {
+        console.log([].includes.call(arguments, 'a')); // true
+        console.log([].includes.call(arguments, 'd')); // false
+    })('a','b','c');
+
+</script>
+</body>
+</html>

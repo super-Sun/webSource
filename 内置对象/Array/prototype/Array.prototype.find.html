@@ -26,6 +26,19 @@
      *
      * 返回：当某个元素通过 callback 的测试时，返回数组中的一个值，否则返回 undefined
      */
+    // 举例：寻找数组中的质数
+    function isPrime(element, index, array) {
+        var start = 2;
+        while (start <= Math.sqrt(element)) {
+            if (element % start++ < 1) {
+                return false;
+            }
+        }
+        return element > 1;
+    }
+
+    console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
+    console.log([4, 5, 8, 12].find(isPrime)); // 5
 
     /**
      * 方法描述：

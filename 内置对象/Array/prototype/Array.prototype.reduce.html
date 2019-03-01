@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.reduce</title>
+</head>
+<body>
+<script>
+    /**
+     * 总结：
+     * 1.注意：如果没有提供initialValue，reduce 会从索引1的地方开始执行 callback 方法，跳过第一个索引。如果提供initialValue，从索引0开始。
+     */
+
+    /**
+     * 1.Array的原型方法：
+     * Array.prototype.reduce: 方法对数组中的每个元素执行一个由您提供的reducer函数(升序执行)，将其结果汇总为单个返回值。
+     *
+     * 语法：arr.reduce(callback[, initialValue])
+     *
+     * 参数
+     * callback：执行数组中每个值的函数，包含四个参数：accumulator （累计器累计回调的返回值; 它是上一次调用回调时返回的累积值，或initialValue）、
+     *           currentValue （数组中正在处理的元素。）、
+     *           currentIndex（数组中正在处理的当前元素的索引。 如果提供了initialValue，则起始索引号为0，否则为1。）、
+     *           array 原数组
+     * initialValue：作为第一次调用 callback函数时的第一个参数的值。
+     *               如果没有提供初始值，则将使用数组中的第一个元素。
+     *               在没有初始值的空数组上调用 reduce 将报错。
+     *
+     * 返回值
+     * 函数累计处理的结果
+     */
+
+    /**
+     * 方法描述：reduce为数组中的每一个元素依次执行callback函数，不包括数组中被删除或从未被赋值的元素，接受四个参数：
+     * 回调函数第一次执行时，accumulator 和currentValue的取值有两种情况：
+     * 如果调用reduce()时提供了initialValue，accumulator取值为initialValue，currentValue取数组中的第一个值；
+     * 如果没有提供 initialValue，那么accumulator取数组中的第一个值，currentValue取数组中的第二个值。
+     */
+
+    // 举例
+    /**
+     * 提供初始值通常更安全，正如下面的例子，如果没有提供initialValue，则可能有三种输出：
+     */
+    function demoFn() {
+        var maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
+        var maxCallback2 = ( max, cur ) => Math.max( max, cur );
+
+        // reduce() 没有初始值
+        [ { x: 22 }, { x: 42 } ].reduce( maxCallback ); // 42
+        [ { x: 22 }            ].reduce( maxCallback ); // { x: 22 }
+        [                      ].reduce( maxCallback ); // TypeError
+
+        // map/reduce; 这是更好的方案，即使传入空数组或更大数组也可正常执行
+        [ { x: 22 }, { x: 42 } ].map( el => el.x ).reduce( maxCallback2, -Infinity );
+    }
+
+    function demoFn2() {
+        [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array){
+            return accumulator + currentValue;
+        });
+    }
+
+    // 数组里所有值的和
+    var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+    }, 0);
+    // 和为 6
+
+    // 累加对象数组里的值
+    var initialValue = 0;
+    var sum2 = [{x: 1}, {x:2}, {x:3}].reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue.x;
+    },initialValue)
+
+    console.log(sum2) // logs 6
+</script>
+</body>
+</html>
