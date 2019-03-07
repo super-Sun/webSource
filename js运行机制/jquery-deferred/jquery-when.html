@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery.when</title>
+    <script src="../../lib/jquery-1.8.3.js"></script>
+</head>
+<body>
+<p>描述: 提供一种方法来执行零个或多个 Thenable（即带有 then 方法） 对象的回调函数， 通常是表示异步事件的 Deferred(延迟) 对象。</p>
+<script>
+    // 1.如果你不传递任何参数，jQuery.when()将返回一个resolved（受理）状态的 promise 对象。then方法内的回调函数，会在主线程立即执行
+    $(function () {
+        console.log('type1-----------------------------------')
+        console.log(11)
+        $.when().then(function (x) {
+            console.log(x)
+            console.log(22)
+        });
+        console.log(33)
+        console.log('type1end-----------------------------------')
+    })
+    // 2.在多个延迟对象传递给jQuery.when() 的情况下，该方法返回一个新的"宿主"延迟对象，
+    // 当所有的延迟对象被受理（resolve）时，该方法才会受理它的宿主延迟对象。
+    // 当其中有一个延迟对象被拒绝（rejected）时，该方法就会拒绝它的宿主延迟对象。
+    // 当宿主对象被受理时，doneCallbacks（受理回调）将被执行。
+    $(function () {
+        console.log('type2-----------------------------------')
+        var d1 = $.Deferred();
+        var d2 = $.Deferred();
+        $.when(d1, d2).then(function (result1, result2) {
+            console.log(result1);
+            console.log(result2);
+        }, function ( result1, result2 ) {
+            console.log( result1 ); //
+            console.log( result2 ); //
+        });
+        d1.resolve( "Fish" );
+        d2.resolve( "Pizza" );
+        console.log('type2end-----------------------------------')
+    });
+ 
+</script>
+</body>
+</html>

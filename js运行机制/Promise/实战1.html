@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="img" src="" alt="xx">
+<script>
+    // Loading image
+    console.log('ready')
+    var src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551955650619&di=edc254cdfa21e63d0c6e6c9813336792&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F11385343fbf2b2114a65cd70c48065380cd78e41.jpg'
+    var imgDom = document.getElementById('img')
+    var p = new Promise(function (resolve, reject) {
+        console.log('loading img---1');
+        imgDom.src = src
+        imgDom.onload = function () {
+            console.log('loaded img');
+            resolve()
+        }
+        console.log('loading img---2');
+        imgDom.onerror = function () {
+            console.log('load error');
+            reject()
+        }
+        console.log('loading img---3');
+    })
+    console.log('---1---');
+    p.then(function (value) {
+        console.log('success')
+    }, function (reason) {
+        console.log('error')
+    })
+    console.log('---2---');
+</script>
+</body>
+</html>

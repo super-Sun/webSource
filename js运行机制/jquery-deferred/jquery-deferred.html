@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery-deferred</title>
+    <script src="../../lib/jquery-1.8.3.js"></script>
+</head>
+<body>
+<script>
+    // jQuery.Deferred (jQuery1.5+)
+    var asycnFun = function () {
+        var dtd = $.Deferred();
+        // 同步代码
+        // doSomeThing();
+        var i = 0;
+        // 异步操作
+        setTimeout(function () {
+            console.log('操作执行完成！');
+            // dtd.resolve('success'); // 成功
+            // dtd.reject('fail'); // 失败
+        }, 2000);
+        // 返回dtd.promise
+        return dtd.promise();
+    };
+    var $promise = asycnFun();
+    // 方式1
+    // $promise.then(function (result) {
+    //     console.log('success1: '+result);
+    //     return false
+    // }).then(function (reuslt) {
+    //     console.log('success2: '+reuslt);
+    // }, function (result) {
+    //     console.log('fail2: '+result);
+    // });
+    $.when($promise).then(function (result) {
+        console.log('done');
+    });
+    // 方式2
+    // $promise.done(function(){ alert("哈哈，成功了！1");return true;}).fail(function(){ alert("出错啦！1"); }).done(function (result) {alert("哈哈，成功了！2");}).fail(function(){ alert("出错啦！2"); });
+
+</script>
+</body>
+</html>

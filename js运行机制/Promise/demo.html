@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+</head>
+<body>
+<h1>Promise详解</h1>
+<h2>是什么？</h2>
+<p>ES6提供的对象，就是一个对象，用来传递异步操作的消息。用于管理与异步 API 的交互的抽象对象</p>
+<h2>有什么用？</h2>
+<p>这是用于管理与异步 API 的交互的抽象对象</p>
+<h2>怎么用？</h2>
+<p>var promise = new Promise(function(resolve, reject) { /*code*/ });</p>
+<p>参数:</p>
+<p>promise :必需。承诺分配到的变量名称。</p>
+<p>resolve :必需。一个函数，运行该函数可指示承诺已成功完成。</p>
+<p>reject :可选。一个函数，运行该函数可指示出现错误，承诺已被拒绝。</p>
+<p>基本的 api:</p>
+<p>Promise.resolve(): 完成，并标记 成功</p>
+<p>Promise.reject()：完成，并标记 失败</p>
+<p>Promise.prototype.then()：回调</p>
+<p>Promise.prototype.catch()：异常捕捉</p>
+<p>var p = Promise.all([p1,p2,p3]); // p:所有的完成</p>
+<p>Promise.race() // 竞速，完成一个即可</p>
+<script>
+    /*例2.普通的返回一个Promise*/
+    function task1(value1){
+        return new Promise((resolve,reject)=>{
+            if(resolve){
+                resolve(value1+1);
+            }else{
+                throw new Error("throw Error @ task1");
+    }
+    });
+    }
+
+    function task2(value2){
+        return new Promise((resolve,reject)=>{
+            if(resolve){
+                resolve(value2+2);
+            }else{
+                throw new Error("throw Error @ task1");
+    }
+    });
+    }
+    function task3(value3){
+        return new Promise((resolve,reject)=>{
+            if(resolve){
+                console.log(value3+3);
+            }else{
+                throw new Error("throw Error @ task1");
+    }
+    });
+    }
+
+    console.log(task1(1).then(task2).then((result) => {
+        console.log(result);
+    }));//console => 7
+</script>
+</body>
+</html>

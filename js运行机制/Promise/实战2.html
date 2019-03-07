@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    // 请求一
+    // $.ajax({
+    //     url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/user/Login',
+    //     type: 'get',
+    //     dataType: 'json',
+    //     success: function (result) {
+    //         // 请求二
+    //         $.ajax({
+    //             url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/user/Push',
+    //             type: 'post',
+    //             data: {data: result.data},
+    //             dataType: 'json',
+    //             success: function (result2) {
+    //                 // 请求三
+    //                 $.ajax({
+    //                     url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/sys/getSysConfig',
+    //                     data: {data: result2.data},
+    //                     type: 'post',
+    //                     dataType: 'json',
+    //                     success: function (result) {
+    //                         console.log(result);
+    //                     },
+    //                     error: function (error) {
+    //                         console.log(error)
+    //                     }
+    //                 })
+    //             },
+    //             error: function (error) {
+    //                 console.log(error)
+    //             }
+    //         })
+    //     },
+    //     error: function (error) {
+    //         console.log(error)
+    //     }
+    // })
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    //请求一
+    var request1 = function () {
+        return $.ajax({
+            url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/user/Login',
+            type: 'get',
+            dataType: 'json'
+        })
+    }
+    // 请求二
+    var request2 = function (data) {
+        return $.ajax({
+            url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/user/Push',
+            type: 'post',
+            data: {data: data},
+            dataType: 'json'
+        })
+    }
+    // 请求三
+    var request3 = function (data) {
+        return $.ajax({
+            url: 'https://www.easy-mock.com/mock/5b2c982496a0217456c95ed9/saas/sys/getSysConfig',
+            type: 'POST',
+            data: {data: data},
+            dataType: 'json'
+        })
+    }
+
+    request1().then(function (result1) {
+        // TODO：result1
+        console.log('response1:', result1);
+        return request2(result1)
+    }).then(function (result2) {
+        // TODO：操作数据
+        console.log('response2:', result2);
+        return request3(result2)
+    }).then(function (result3) {
+        // TODO：操作数据
+        console.log('response3:', result3);
+    }).fail(function (reason) {
+        console.log(reason);
+    })
+
+
+</script>
+</body>
+</html>

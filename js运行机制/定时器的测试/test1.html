@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<script>
+    setTimeout(function () {
+        console.log(1)
+    }, 3000)
+    // 主线程被程序占用，定时器的计时功能仍然可以用
+    // cusWait(5)
+    // 主线程被alert占用，定时器的将停止计时
+    // alert(1)
+    setTimeout(function () {
+        console.log(2)
+    }, 1000)
+    function fn() {
+        console.log(3)
+    }
+    fn()
+    // alert(1)
+
+    function cusWait(second) {
+        var date = new Date()
+        var dur = second * 1000
+        while ((new Date().getTime() - date.getTime()) <= dur) {}
+    }
+</script>
+</body>
+</html>
